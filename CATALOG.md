@@ -1,37 +1,29 @@
-# Catálogo de Skills e ferramentas solicitadas
+# Catálogo de solicitações históricas
 
-**Catalogar não é instalar.** Nenhum código de terceiros foi copiado ou executado. Os links são candidatos à verificação, não aprovação.
+Este arquivo é a **ponte entre seus pedidos anteriores e as fichas verificadas**. O catálogo principal com estrelas, links e tipos é [INDEX.md](INDEX.md).
 
-| Nome | Classificação | Origem candidata | Estado |
-|---|---|---|---|
-| TradingAgents | framework | https://github.com/TauricResearch/TradingAgents | Pendente de validação de licença, segurança e compatibilidade |
-| OpenCode | tool | https://github.com/anomalyco/opencode | Pendente de validação de licença, segurança e compatibilidade |
-| Graphify | unverified | A confirmar | Pendente de validação de licença, segurança e compatibilidade |
-| Orca | unverified | A confirmar | Pendente de validação de licença, segurança e compatibilidade |
-| Cloudflare Security Audit | capability | A confirmar | Pendente de validação de licença, segurança e compatibilidade |
-| BibleMate | unverified | A confirmar | Pendente de validação de licença, segurança e compatibilidade |
-| OpenLumin | unverified | A confirmar | Pendente de validação de licença, segurança e compatibilidade |
-| Skill-Theo | unverified | A confirmar | Pendente de validação de licença, segurança e compatibilidade |
-| UI UX Pro Max | unverified | A confirmar | Pendente de validação de licença, segurança e compatibilidade |
-| Marketing skills | category | A confirmar | Pendente de validação de licença, segurança e compatibilidade |
-| Cloudflare Agents SDK | installed-plugin-skill | A confirmar | Disponível neste ambiente; não exportada |
-| Cloudflare architecture | installed-plugin-skill | A confirmar | Disponível neste ambiente; não exportada |
-| Supabase | installed-plugin-skill | A confirmar | Disponível neste ambiente; não exportada |
-| Vercel AI SDK | installed-plugin-skill | A confirmar | Disponível neste ambiente; não exportada |
-| Vercel AI Gateway | installed-plugin-skill | A confirmar | Disponível neste ambiente; não exportada |
-| Vercel deployments | installed-plugin-skill | A confirmar | Disponível neste ambiente; não exportada |
-| Google Drive | installed-plugin-skill | A confirmar | Disponível neste ambiente; não exportada |
-| Google Docs | installed-plugin-skill | A confirmar | Disponível neste ambiente; não exportada |
-| Google Sheets | installed-plugin-skill | A confirmar | Disponível neste ambiente; não exportada |
-| Google Slides | installed-plugin-skill | A confirmar | Disponível neste ambiente; não exportada |
-| Public Equity Investing | installed-plugin-skill | A confirmar | Disponível neste ambiente; não exportada |
-| Design skills (general) | category | A confirmar | Pendente de validação de licença, segurança e compatibilidade |
+## Eficiência de tokens e contexto
+- RTK (CLI de compactação); Headroom (compressão/MCP); ECC (hooks/Skills/memória); Serena (busca semântica); Ponytail (implementação enxuta).
+- Skills autorais: [token-efficiency](skills/token-efficiency/SKILL.md) e [token-lean-workflow](skills/token-lean-workflow/SKILL.md).
+- FreeLLMAPI e LiteLLM são **gateways**, não Skills; analisar custos, chaves e cotas.
 
-## Regras de importação
-1. Identificar repositório original, licença e versão.
-2. Inspecionar SKILL.md, scripts, dependências e permissões.
-3. Copiar apenas quando a redistribuição for permitida, com atribuição.
-4. Testar em ambiente isolado antes de marcar como validada.
-5. Não confundir projeto, framework, categoria ou plugin com Skill instalável.
+## Agentes, ferramentas e orquestração
+- OpenCode, Codex CLI, Claude Code, Gemini CLI, Cline, Aider, Pi, Hermes Agent, OpenHands, Superpowers, Graphify, Orca (nome histórico ambíguo).
+- Vercel Agent Desktop, Strix e ECC estão também em [tools](tools/).
+- Busca na web, browser use, MCP, servidores de memória e frameworks estão classificados no [índice](INDEX.md).
 
-As oito Skills derivadas de documentos autorais estão em `skills/` e permanecem sem testes funcionais.
+## Design e motion
+- [jakubkrehel/skills](https://github.com/jakubkrehel/skills): coleção mencionada de better-interface, better-ui, better-typography, better-colors, better-accessibility, better-layout, better-writing, interface-review, explain-interface, break, build-design, teardown, state-machine e variant — **a disponibilidade atual de cada subskill não foi inspecionada individualmente**.
+- UI UX Pro Max, Impeccable, frontend-design e [Prompt Motion](tools/prompt-motion/README.md).
+- Ferramentas de design e gráficos em `catalog/design-motion.json`; Skill própria de datashow em `skills/datashow-banner-production/`.
+
+## Segurança, finanças, marketing e teologia
+- Cloudflare Security Audit, Trail of Bits e ferramentas de análise em `catalog/security-testing.json`.
+- TradingAgents, FinRobot, FinRL, FinGPT, OpenBB, Qlib e agentes oficiais em `catalog/finance-sdk-evals.json`.
+- Marketing Skills, Claude SEO, GEO SEO e outras coleções em `catalog/marketing-knowledge.json`.
+- BibleMate, OpenLumin e Skill-Theo: fontes não comprovadas; continuam em [pendências](docs/UNRESOLVED.md), sem fingir instalação.
+
+## Outras fontes históricas
+[Inventário de 42 referências](docs/HISTORICAL_RESOURCES.md) · [31 Markdown recebidos anteriormente](docs/ZIP_REVIEW.md) · [Pedidos ainda a resolver](docs/REQUEST_BACKLOG.md).
+
+**Estado:** metadados e referências catalogados; nenhum download de código executável de terceiros, instalação global ou validação funcional universal.
