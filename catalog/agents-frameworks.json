@@ -50,8 +50,9 @@
       "type": "agent",
       "license": null,
       "description": "",
-      "status": "metadata-verified-only",
-      "installed": false
+      "status": "unverified",
+      "installed": false,
+      "reason": "GitHub metadata did not confirm the canonical repository. See corrected discoveries or upstream identity."
     },
     {
       "repo": "NousResearch/hermes-agent",
