@@ -16,6 +16,7 @@ Uma biblioteca organizada de **Skills, ferramentas, agentes, servidores MCP, fra
 | Ver ferramentas pedidas (ECC, Strix, Agent Desktop, Prompt Motion) | [tools/](tools/) |
 | Encontrar pedidos antigos | [CATALOG.md](CATALOG.md), [docs/HISTORICAL_RESOURCES.md](docs/HISTORICAL_RESOURCES.md) |
 | Conferir nomes não identificados | [docs/UNRESOLVED.md](docs/UNRESOLVED.md) |
+| Aprender a instalar Skills, MCPs e ferramentas | [install/README.md](install/README.md) |
 | Avaliar segurança, licença e custo | [docs/ADOPTION_POLICY.md](docs/ADOPTION_POLICY.md) |
 | Pesquisar novas ferramentas com IA | [prompts/curate-and-verify.md](prompts/curate-and-verify.md) |
 | Entender integrações MCP e hooks | [mcp/](mcp/), [hooks/](hooks/) |
