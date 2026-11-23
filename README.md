@@ -42,8 +42,11 @@ Todas ficam em `skills/<nome>/SKILL.md`. Não há garantia de que um agente as c
 
 As 124 entradas têm **metadados oficiais do GitHub conferidos**, não 124 auditorias de software. As 8 referências não confirmadas permanecem registradas para triagem. Este projeto não gerencia configurações privadas do ChatGPT, instalação no Codex ou deploys de terceiros. Consulte o [status técnico](docs/STATUS.md).
 
-## Repositórios externos vinculados
+## Repositórios externos e backups
 
-- **[Legislação brasileira em Markdown (ctresb/leis)](repositories/leis)**: acervo de normas federais, estaduais, municipais e de reguladores, vinculado como *submódulo Git* em `repositories/leis`. Consulte [o registro e os cuidados de uso](docs/EXTERNAL_REPOSITORIES.md). Não é uma Skill e não foi instalado, executado ou auditado aqui.
+**Referência/catalogação não é backup.** Os projetos externos do INDEX.md, catalog/*.json e tools/* estão documentados, mas seus códigos-fonte NÃO foram clonados para esta biblioteca.
 
-O submódulo mantém apenas a referência Git nesta biblioteca, sem duplicar o enorme acervo no histórico do Ai-skills. A cópia local do acervo é opcional e deve ser feita conscientemente.
+- **ctresb/leis:** [projeto original](https://github.com/ctresb/leis), acervo brasileiro de legislação em Markdown. **Backup independente ainda não realizado.** O submódulo anterior foi removido porque não é uma cópia autônoma.
+- Para produzir uma cópia real dos arquivos do projeto, consulte [o procedimento e os limites](docs/EXTERNAL_REPOSITORIES.md) e [o importador PowerShell](scripts/import-repository-snapshot.ps1).
+
+Não confunda um registro de fonte, link ou submódulo com um espelho preservado. Este repositório ainda não substitui backups independentes dos projetos de terceiros.
