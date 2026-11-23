@@ -41,3 +41,9 @@ Todas ficam em `skills/<nome>/SKILL.md`. Não há garantia de que um agente as c
 ## Limites transparentes
 
 As 124 entradas têm **metadados oficiais do GitHub conferidos**, não 124 auditorias de software. As 8 referências não confirmadas permanecem registradas para triagem. Este projeto não gerencia configurações privadas do ChatGPT, instalação no Codex ou deploys de terceiros. Consulte o [status técnico](docs/STATUS.md).
+
+## Repositórios externos vinculados
+
+- **[Legislação brasileira em Markdown (ctresb/leis)](repositories/leis)**: acervo de normas federais, estaduais, municipais e de reguladores, vinculado como *submódulo Git* em `repositories/leis`. Consulte [o registro e os cuidados de uso](docs/EXTERNAL_REPOSITORIES.md). Não é uma Skill e não foi instalado, executado ou auditado aqui.
+
+O submódulo mantém apenas a referência Git nesta biblioteca, sem duplicar o enorme acervo no histórico do Ai-skills. A cópia local do acervo é opcional e deve ser feita conscientemente.
