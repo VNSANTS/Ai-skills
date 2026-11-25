@@ -25,6 +25,14 @@ Use a coluna de tarefa para escolher a primeira skill. Consulte a documentação
 | [deliverable-review](deliverable-review/SKILL.md) | Conferir se a versão final atende ao pedido e pode ser usada |
 | [staged-rollout](staged-rollout/SKILL.md) | Publicar uma mudança por etapas com critérios de avanço e recuperação |
 
+## Orquestração de tarefas
+
+| Skill | Use para |
+|---|---|
+| [task-orchestration](task-orchestration/SKILL.md) | Receber um pedido, entender o projeto, montar o roteiro, executar e conferir a entrega |
+| [task-clarification](task-clarification/SKILL.md) | Resolver dúvidas que mudam a entrega e definir o aceite |
+| [model-agent-routing](model-agent-routing/SKILL.md) | Selecionar modelos, agentes, skills e ferramentas por etapa |
+
 ## Skills já disponíveis
 
 | Área | Skills |

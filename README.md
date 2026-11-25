@@ -2,7 +2,7 @@
 
 Uma biblioteca organizada de **Skills, ferramentas, agentes, servidores MCP, frameworks, hooks, prompts, SDKs, design, segurança, marketing, finanças e eficiência de tokens**.
 
-**Catálogo atualizado em 25/11/2026:** **145 repositórios com metadados confirmados na API do GitHub**, **8 candidatos ainda não confirmados**, **14 arquivos JSON catalogados**, **31 Skills autorais/reconstruídas**, quatro fichas de ferramentas e 42 referências recuperadas de pedidos antigos.
+**Catálogo atualizado em 25/11/2026:** **145 repositórios com metadados confirmados na API do GitHub**, **8 candidatos ainda não confirmados**, **14 arquivos JSON catalogados**, **34 Skills autorais/reconstruídas**, quatro fichas de ferramentas e 42 referências recuperadas de pedidos antigos.
 
 > **Catalogado ≠ instalado ≠ auditado.** Popularidade e campo de licença do GitHub não garantem segurança. Não foi copiado ou executado código de terceiros nem foram configurados hooks, MCPs ou modelos pagos. O orçamento adicional permitido é **R$ 0**.
 
@@ -26,6 +26,10 @@ Uma biblioteca organizada de **Skills, ferramentas, agentes, servidores MCP, fra
 | Adotar regras em projeto próprio | [examples/AGENTS.project.md](examples/AGENTS.project.md) |
 | Validar dados localmente | `python scripts/validate_catalog.py` |
 | Rever o legado dos 31 Markdown | [docs/ZIP_REVIEW.md](docs/ZIP_REVIEW.md) |
+
+## Execute uma tarefa de ponta a ponta
+
+Use [task-orchestration](skills/task-orchestration/SKILL.md) e descreva o resultado que quer. Ela consulta [task-clarification](skills/task-clarification/SKILL.md) e [model-agent-routing](skills/model-agent-routing/SKILL.md) para fechar o escopo, escolher os recursos disponíveis e executar um roteiro verificável.
 
 ## Coleções de Skills autorais
 
