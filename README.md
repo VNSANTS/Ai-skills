@@ -2,7 +2,7 @@
 
 Uma biblioteca organizada de **Skills, ferramentas, agentes, servidores MCP, frameworks, hooks, prompts, SDKs, design, segurança, marketing, finanças e eficiência de tokens**.
 
-**Catálogo atualizado em 25/11/2026:** **145 repositórios com metadados confirmados na API do GitHub**, **8 candidatos ainda não confirmados**, **14 arquivos JSON catalogados**, **16 Skills autorais/reconstruídas**, quatro fichas de ferramentas e 42 referências recuperadas de pedidos antigos.
+**Catálogo atualizado em 25/11/2026:** **145 repositórios com metadados confirmados na API do GitHub**, **8 candidatos ainda não confirmados**, **14 arquivos JSON catalogados**, **28 Skills autorais/reconstruídas**, quatro fichas de ferramentas e 42 referências recuperadas de pedidos antigos.
 
 > **Catalogado ≠ instalado ≠ auditado.** Popularidade e campo de licença do GitHub não garantem segurança. Não foi copiado ou executado código de terceiros nem foram configurados hooks, MCPs ou modelos pagos. O orçamento adicional permitido é **R$ 0**.
 
@@ -15,7 +15,7 @@ Uma biblioteca organizada de **Skills, ferramentas, agentes, servidores MCP, fra
 | Ver skills encontradas em Reels | [Skills descobertas no Instagram](INDEX.md#skills-descobertas-no-instagram) |
 | Ver skills encontradas no YouTube | [Demonstrações no YouTube](INDEX.md#skills-e-ferramentas-descobertas-no-youtube) |
 | Acessar dados estruturados para IA/scripts | [catalog/](catalog/) — JSONs por área |
-| Usar uma Skill própria | [skills/](skills/) |
+| Escolher uma skill própria para qualquer projeto | [Skills por tarefa](skills/README.md) |
 | Ver ferramentas pedidas (ECC, Strix, Agent Desktop, Prompt Motion) | [tools/](tools/) |
 | Encontrar pedidos antigos | [CATALOG.md](CATALOG.md), [docs/HISTORICAL_RESOURCES.md](docs/HISTORICAL_RESOURCES.md) |
 | Conferir nomes não identificados | [docs/UNRESOLVED.md](docs/UNRESOLVED.md) |
@@ -28,6 +28,8 @@ Uma biblioteca organizada de **Skills, ferramentas, agentes, servidores MCP, fra
 | Rever o legado dos 31 Markdown | [docs/ZIP_REVIEW.md](docs/ZIP_REVIEW.md) |
 
 ## Coleções de Skills autorais
+
+Encontre fluxos reutilizáveis de planejamento, pesquisa, dados, documentação, apresentações, qualidade, acessibilidade, automação, operações e conteúdo no [índice de skills](skills/README.md).
 
 Arquitetura de backend; Flutter; UX/UI; engenharia de agentes; educação financeira; design de aprendizagem; gamificação ética; estratégia de produto; eficiência de tokens; fluxo econômico de tarefas; banners panorâmicos para datashow; curadoria de repositórios; adoção segura de ferramentas.
 
