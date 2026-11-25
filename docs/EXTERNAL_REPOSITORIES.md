@@ -20,23 +20,31 @@ A conexão disponível para alterações no GitHub não oferece transferência m
 
 ### Importar arquivos completos (snapshot independente) pelo Windows
 
-1. Clone seu `VNSANTS/Ai-skills` em um disco com espaço suficiente. Não execute um comando de clone recursivo.
-2. A partir da raiz local da biblioteca, execute o importador PowerShell revisado em `scripts/import-repository-snapshot.ps1`:
+1. Use o Windows PowerShell 5.1 ou posterior e a distribuição completa do Git for Windows, que inclui o Git Bash. Clone seu `VNSANTS/Ai-skills` em um disco com espaço para a cópia de trabalho e os objetos Git da revisão. Não execute um comando de clone recursivo.
+2. A partir da raiz local da biblioteca, execute o importador com `-Stage` para preparar também o commit.
    
    ```powershell
-   powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\import-repository-snapshot.ps1
+   powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\import-repository-snapshot.ps1 -Stage
    ```
-3. O script baixa o estado integral dos **arquivos rastreados** da branch `main` de `ctresb/leis`, copia para `repositories/leis/` sem o diretório `.git`, verifica a presença dos arquivos e registra o commit de origem.
-4. Revise o diretório, confirme a licença, espaço disponível, LFS e limites do GitHub (especialmente arquivos acima de 100 MB), depois:
+3. Por padrão, o script usa a branch `main` de `ctresb/leis`. Ele extrai os arquivos rastreados em uma pasta temporária, compara os nomes e os bytes com a árvore do commit e grava `NEXUS_BACKUP_MANIFEST.md` com origem, branch, commit e contagem. Só então publica a pasta em `repositories/leis/`. Uma nova execução preserva um destino já existente e informa o conflito.
+4. Com `-Stage`, o importador prepara o índice usando os objetos e modos da revisão original. Isso preserva inclusive um arquivo rastreado que corresponda a uma regra em `.gitignore`. Compare o identificador exibido pelo importador com a saída de `git write-tree` abaixo. Revise tudo que será incluído no commit, inclusive alterações que você já tinha preparado, e confirme licença, espaço e limites do GitHub. Um novo `git add` pode reaplicar conversões de `.gitattributes` aos arquivos.
    
    ```powershell
-   git add -- repositories/leis
+   git diff --cached --stat
+   git write-tree --prefix=repositories/leis/
    git commit -m "backup: archive ctresb/leis tracked files"
+   git rev-parse HEAD:repositories/leis
    git push origin main
    ```
-5. **Só chame de backup concluído após o push e uma verificação de que os arquivos podem ser baixados independentemente do original.**
+5. Em um novo clone do repositório de destino, execute `git rev-parse HEAD:repositories/leis` e compare com o identificador da árvore preparada. A igualdade confirma os nomes, modos e bytes registrados, inclusive o manifesto. Um checkout pode aplicar as conversões locais de texto. Para consultar os bytes armazenados de um arquivo, use `git cat-file blob HEAD:repositories/leis/caminho`. Só então registre a conclusão do backup.
 
-**Limitação:** esse processo preserva os arquivos da revisão escolhida, não os 323 mil+ commits históricos, branches e tags; para preservar também o histórico integral, é necessário `git clone --mirror` / `git bundle` em armazenamento compatível com o volume, fora de uma pasta Git comum. Se existirem objetos Git LFS, eles também devem ser obtidos e validados antes de afirmar completude.
+Sem `-Stage`, o script entrega a pasta local e deixa o índice como estava. O preparo do commit exige o mesmo formato de objetos Git nos dois repositórios. O script aceita caminhos locais e os transportes Git, HTTP, HTTPS e SSH habilitados na configuração do usuário. Ele interrompe a importação quando encontra um submódulo, link simbólico, ponteiro Git LFS ou conflito com o nome do manifesto. Para arquivar uma origem com Git LFS, obtenha e confira também os objetos referenciados. No Windows, o sistema de arquivos pode representar um executável Unix como arquivo comum. O modo original fica preservado no índice com `-Stage`. Para preservar o histórico integral, use `git clone --mirror` ou `git bundle` em armazenamento compatível com o volume.
+
+Para testar o importador sem baixar a coleção, execute o comando abaixo com Python 3 e Git. A suíte cria repositórios Git temporários no próprio computador. No Windows, ela chama a interface PowerShell acima e testa junções de diretório. No Linux, ela executa o mesmo auxiliar Bash que faz a importação.
+
+```console
+python -m unittest discover -s tests -p test_import_repository_snapshot.py -v
+```
 
 ### Outros repositórios do catálogo
 

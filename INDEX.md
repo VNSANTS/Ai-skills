@@ -1,8 +1,8 @@
 # Índice de recursos para agentes de IA
 
-> **Snapshots do GitHub de 9 e 25 de novembro de 2026**. Estrelas, licença SPDX e atividade são metadados da API; **não** significam auditoria de segurança, licença aprovada, compatibilidade ou instalação. Nenhum código externo foi copiado ou executado.
+> **Metadados do GitHub em 25 de novembro de 2026.** O retrato registra estrelas, licença SPDX, último push e estado de arquivamento informados pela API do GitHub. A verificação cobre apenas metadados.
 
-**145 repositórios com metadados confirmados**, 8 referências pendentes de confirmação e **14 catálogos JSON**. Veja também [42 referências antigas](docs/HISTORICAL_RESOURCES.md), [pendências](docs/UNRESOLVED.md) e [política de adoção](docs/ADOPTION_POLICY.md).
+**147 repositórios com metadados confirmados**, 3 caminhos antigos pendentes e **14 catálogos JSON**. Os quatro caminhos históricos confirmados permanecem como aliases dos repositórios atuais. Veja também [42 referências antigas](docs/HISTORICAL_RESOURCES.md), [pendências](docs/UNRESOLVED.md) e [política de adoção](docs/ADOPTION_POLICY.md).
 
 ## Produtividade de desenvolvimento
 
@@ -58,39 +58,39 @@ Seleção a partir de demonstrações de [Matt Wolfe](https://www.youtube.com/wa
 
 Prioridade para desenvolvimento: GStack para estruturar revisão e QA, e Understand Anything para navegar no código. Compatibilidade, permissões e impacto na produtividade ainda precisam de teste no ambiente escolhido.
 
-## ★ Principais projetos por popularidade
+## ★ 25 repositórios com mais estrelas
 
 | Projeto | Estrelas | Licença detectada | Categoria |
 |---|---:|---|---|
-| [morluto/rea](https://github.com/morluto/rea) | 445.756 | MIT | Engenharia reversa |
-| [mattpocock/skills](https://github.com/mattpocock/skills) | 319.262 | MIT | Engenharia |
-| [obra/superpowers](https://github.com/obra/superpowers) | 314.885 | MIT | Engenharia |
-| [affaan-m/ECC](https://github.com/affaan-m/ECC) | 299.980 | MIT | Eficiência |
-| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 261.965 | MIT | Autonomia controlada |
-| [anomalyco/opencode](https://github.com/anomalyco/opencode) | 225.675 | MIT | CLI e edição |
-| [n8n-io/n8n](https://github.com/n8n-io/n8n) | 209.907 | NOASSERTION | Automação |
-| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | 199.997 | AGPL-3.0 | Coleta web |
-| [microsoft/markitdown](https://github.com/microsoft/markitdown) | 194.552 | MIT | Documentos |
-| [anthropics/skills](https://github.com/anthropics/skills) | 190.324 | a verificar | Oficiais |
-| [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | 187.332 | MIT | Eficiência |
-| [twbs/bootstrap](https://github.com/twbs/bootstrap) | 175.023 | MIT | CSS |
-| [langgenius/dify](https://github.com/langgenius/dify) | 160.754 | NOASSERTION | Plataforma |
-| [anthropics/claude-code](https://github.com/anthropics/claude-code) | 155.078 | a verificar | Programação |
-| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | 149.260 | MIT | Framework |
-| [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | 147.202 | MIT | Design |
-| [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | 144.845 | Apache-2.0 | Análise de código |
-| [excalidraw/excalidraw](https://github.com/excalidraw/excalidraw) | 135.387 | MIT | Diagramas |
-| [openai/codex](https://github.com/openai/codex) | 134.242 | Apache-2.0 | Programação |
-| [shadcn-ui/ui](https://github.com/shadcn-ui/ui) | 127.702 | MIT | Componentes UI |
-| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | 121.505 | Apache-2.0 | Pesquisa financeira |
-| [browser-use/browser-use](https://github.com/browser-use/browser-use) | 120.415 | MIT | Automação web |
-| [stablyai/orca](https://github.com/stablyai/orca) | 120.015 | MIT | Orquestração |
-| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 115.220 | Apache-2.0 | Memória |
-| [supabase/supabase](https://github.com/supabase/supabase) | 114.701 | Apache-2.0 | Backend |
+| [morluto/rea](https://github.com/morluto/rea) | 478.062 | MIT | Engenharia reversa |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | 332.681 | MIT | Engenharia |
+| [obra/superpowers](https://github.com/obra/superpowers) | 326.366 | MIT | Engenharia |
+| [affaan-m/ECC](https://github.com/affaan-m/ECC) | 310.545 | MIT | Eficiência |
+| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 266.039 | MIT | Autonomia controlada |
+| [anomalyco/opencode](https://github.com/anomalyco/opencode) | 229.119 | MIT | CLI e edição |
+| [n8n-io/n8n](https://github.com/n8n-io/n8n) | 212.100 | NOASSERTION | Automação |
+| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | 209.687 | AGPL-3.0 | Coleta web |
+| [anthropics/skills](https://github.com/anthropics/skills) | 200.335 | a verificar | Oficiais |
+| [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | 198.542 | MIT | Eficiência |
+| [microsoft/markitdown](https://github.com/microsoft/markitdown) | 198.411 | MIT | Documentos |
+| [twbs/bootstrap](https://github.com/twbs/bootstrap) | 175.133 | MIT | CSS |
+| [langgenius/dify](https://github.com/langgenius/dify) | 161.889 | NOASSERTION | Plataforma |
+| [anthropics/claude-code](https://github.com/anthropics/claude-code) | 157.031 | a verificar | Programação |
+| [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | 154.062 | MIT | Design |
+| [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | 153.233 | Apache-2.0 | Análise de código |
+| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | 149.979 | MIT | Framework |
+| [garrytan/gstack](https://github.com/garrytan/gstack) | 142.628 | MIT | Engenharia |
+| [stablyai/orca](https://github.com/stablyai/orca) | 137.536 | MIT | Orquestração |
+| [openai/codex](https://github.com/openai/codex) | 136.426 | Apache-2.0 | Programação |
+| [excalidraw/excalidraw](https://github.com/excalidraw/excalidraw) | 136.290 | MIT | Diagramas |
+| [shadcn-ui/ui](https://github.com/shadcn-ui/ui) | 129.066 | MIT | Componentes UI |
+| [earendil-works/pi](https://github.com/earendil-works/pi) | 123.848 | MIT | Agente leve |
+| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | 123.751 | Apache-2.0 | Pesquisa financeira |
+| [browser-use/browser-use](https://github.com/browser-use/browser-use) | 122.031 | MIT | Automação web |
 
 ## Lista completa por área
 
-Cada JSON registra `repo`, `type`, `category`, `url`, `stars`, `license`, `pushed_at`, `archived`, `description`, `status` e `installed` quando disponíveis. Um projeto listado pode ser ferramenta, SDK, servidor MCP, framework ou Skill.
+Cada JSON registra o caminho canônico em `repo`, a categoria em `category` e o tipo em `type`. As fichas confirmadas guardam o ID estável do GitHub em `repository_id`, além de URL, estrelas, licença, último push, estado de arquivamento e descrição. O campo `aliases` registra caminhos antigos quando a API os associa ao mesmo ID. Os três catálogos temáticos no início deste índice também fazem parte da lista completa.
 
 ### Skills essenciais
 
@@ -98,18 +98,18 @@ Cada JSON registra `repo`, `type`, `category`, `url`, `stars`, `license`, `pushe
 
 | Projeto | ★ | Tipo | Situação |
 |---|---:|---|---|
-| [morluto/rea](https://github.com/morluto/rea) | 445.756 | skill-tool | Metadados OK |
-| [mattpocock/skills](https://github.com/mattpocock/skills) | 319.262 | skill-collection | Metadados OK |
-| [obra/superpowers](https://github.com/obra/superpowers) | 314.885 | skill-framework | Metadados OK |
-| [affaan-m/ECC](https://github.com/affaan-m/ECC) | 299.980 | agent-toolkit | Metadados OK |
-| [anthropics/skills](https://github.com/anthropics/skills) | 190.324 | skill-collection | Metadados OK |
-| [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | 144.845 | skill-tool | Metadados OK |
-| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 114.378 | skill-collection | Metadados OK |
-| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | 106.595 | skill-tool | Metadados OK |
-| [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | 67.551 | skill | Metadados OK |
-| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 33.758 | skill-collection | Metadados OK |
-| [openai/skills](https://github.com/openai/skills) | 28.611 | skill-collection | Metadados OK |
-| [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | 11.842 | skill-collection | Metadados OK |
+| [morluto/rea](https://github.com/morluto/rea) | 478.062 | skill-tool | Metadados OK |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | 332.681 | skill-collection | Metadados OK |
+| [obra/superpowers](https://github.com/obra/superpowers) | 326.366 | skill-framework | Metadados OK |
+| [affaan-m/ECC](https://github.com/affaan-m/ECC) | 310.545 | agent-toolkit | Metadados OK |
+| [anthropics/skills](https://github.com/anthropics/skills) | 200.335 | skill-collection | Metadados OK |
+| [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | 153.233 | skill-tool | Metadados OK |
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 120.368 | skill-collection | Metadados OK |
+| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | 116.686 | skill-tool | Metadados OK |
+| [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | 78.231 | skill | Metadados OK |
+| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 34.906 | skill-collection | Metadados OK |
+| [openai/skills](https://github.com/openai/skills) | 29.132 | skill-collection | Metadados OK |
+| [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | 12.703 | skill-collection | Metadados OK |
 
 ### Ecossistema de Skills
 
@@ -117,18 +117,18 @@ Cada JSON registra `repo`, `type`, `category`, `url`, `stars`, `license`, `pushe
 
 | Projeto | ★ | Tipo | Situação |
 |---|---:|---|---|
-| [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | 79.111 | awesome-list | Metadados OK |
-| [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | 57.592 | awesome-list | Metadados OK |
-| [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) | 49.398 | awesome-list | Metadados OK |
-| [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) | 46.557 | plugin-collection | Metadados OK |
-| [anthropics/financial-services](https://github.com/anthropics/financial-services) | 41.169 | skill-collection | Metadados OK |
-| [github/awesome-copilot](https://github.com/github/awesome-copilot) | 40.960 | skill-collection | Metadados OK |
-| [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) | 36.996 | awesome-list | Metadados OK |
-| [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | 35.256 | plugin-collection | Metadados OK |
-| [huggingface/skills](https://github.com/huggingface/skills) | 11.307 | skill-collection | Metadados OK |
-| [anthropics/claude-for-legal](https://github.com/anthropics/claude-for-legal) | 9.951 | skill-collection | Metadados OK |
-| [trailofbits/skills](https://github.com/trailofbits/skills) | 8.086 | skill-collection | Metadados OK |
-| [remotion-dev/skills](https://github.com/remotion-dev/skills) | 6.662 | skill-collection | Metadados OK |
+| [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | 80.281 | awesome-list | Metadados OK |
+| [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | 58.780 | awesome-list | Metadados OK |
+| [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) | 50.310 | awesome-list | Metadados OK |
+| [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official) | 48.178 | plugin-collection | Metadados OK |
+| [github/awesome-copilot](https://github.com/github/awesome-copilot) | 41.554 | skill-collection | Metadados OK |
+| [anthropics/financial-services](https://github.com/anthropics/financial-services) | 41.511 | skill-collection | Metadados OK |
+| [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) | 37.540 | awesome-list | Metadados OK |
+| [anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) | 36.888 | plugin-collection | Metadados OK |
+| [huggingface/skills](https://github.com/huggingface/skills) | 11.398 | skill-collection | Metadados OK |
+| [anthropics/claude-for-legal](https://github.com/anthropics/claude-for-legal) | 10.090 | skill-collection | Metadados OK |
+| [trailofbits/skills](https://github.com/trailofbits/skills) | 8.424 | skill-collection | Metadados OK |
+| [remotion-dev/skills](https://github.com/remotion-dev/skills) | 7.995 | skill-collection | Metadados OK |
 
 ### Outras coleções e agentes oficiais
 
@@ -136,18 +136,17 @@ Cada JSON registra `repo`, `type`, `category`, `url`, `stars`, `license`, `pushe
 
 | Projeto | ★ | Tipo | Situação |
 |---|---:|---|---|
-| [anthropics/claude-code](https://github.com/anthropics/claude-code) | 155.078 | agent | Metadados OK |
-| [openai/codex](https://github.com/openai/codex) | 134.242 | agent | Metadados OK |
-| [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | 112.341 | skill | Metadados OK |
-| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | 108.802 | agent | Metadados OK |
-| [tt-a1i/archify](https://github.com/tt-a1i/archify) | 94.959 | skill-tool | Metadados OK |
-| [openai/openai-cookbook](https://github.com/openai/openai-cookbook) | 77.018 | examples | Metadados OK |
-| [google/elephant-goldfish-model](https://github.com/google/elephant-goldfish-model) | 15.989 | agent-toolkit | Metadados OK |
-| [heydamir/unslop](https://github.com/heydamir/unslop) | 12.461 | skill | Metadados OK |
-| [GoogleCloudPlatform/agent-starter-pack](https://github.com/GoogleCloudPlatform/agent-starter-pack) | 6.570 | agent-toolkit | Metadados OK |
-| [anthropics/commerce-agents](https://github.com/anthropics/commerce-agents) | 3.442 | skill-collection | Metadados OK |
+| [anthropics/claude-code](https://github.com/anthropics/claude-code) | 157.031 | agent | Metadados OK |
+| [openai/codex](https://github.com/openai/codex) | 136.426 | agent | Metadados OK |
+| [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | 121.420 | skill | Metadados OK |
+| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | 109.102 | agent | Metadados OK |
+| [tt-a1i/archify](https://github.com/tt-a1i/archify) | 99.823 | skill-tool | Metadados OK |
+| [openai/openai-cookbook](https://github.com/openai/openai-cookbook) | 77.488 | examples | Metadados OK |
+| [google/elephant-goldfish-model](https://github.com/google/elephant-goldfish-model) | 22.946 | agent-toolkit | Metadados OK |
+| [heydamir/unslop](https://github.com/heydamir/unslop) | 21.581 | skill | Metadados OK |
+| [GoogleCloudPlatform/agent-starter-pack](https://github.com/GoogleCloudPlatform/agent-starter-pack) | 6.572 | agent-toolkit | Metadados OK · arquivado |
+| [anthropics/commerce-agents](https://github.com/anthropics/commerce-agents) | 3.530 | skill-collection | Metadados OK |
 | [Sandy4321/awesome-agent-skills-july2026](https://github.com/Sandy4321/awesome-agent-skills-july2026) | 0 | awesome-list | Metadados OK |
-| Sickn33/antigravity-awesome-skills | — | awesome-list | Não confirmado |
 
 ### Agentes e frameworks
 
@@ -155,18 +154,18 @@ Cada JSON registra `repo`, `type`, `category`, `url`, `stars`, `license`, `pushe
 
 | Projeto | ★ | Tipo | Situação |
 |---|---:|---|---|
-| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 261.965 | agent | Metadados OK |
-| [anomalyco/opencode](https://github.com/anomalyco/opencode) | 225.675 | agent | Metadados OK |
-| [langgenius/dify](https://github.com/langgenius/dify) | 160.754 | platform | Metadados OK |
-| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | 149.260 | framework | Metadados OK |
-| [cline/cline](https://github.com/cline/cline) | 71.491 | agent | Metadados OK |
-| [microsoft/autogen](https://github.com/microsoft/autogen) | 61.759 | framework | Metadados OK |
-| [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | 60.686 | framework | Metadados OK |
-| [FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise) | 55.565 | platform | Metadados OK |
-| [Aider-AI/aider](https://github.com/Aider-AI/aider) | 50.032 | agent | Metadados OK |
-| [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | 44.691 | framework | Metadados OK |
-| [microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel) | 28.748 | framework | Metadados OK |
-| badlogic/pi-mono | — | agent | Não confirmado |
+| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 266.039 | agent | Metadados OK |
+| [anomalyco/opencode](https://github.com/anomalyco/opencode) | 229.119 | agent | Metadados OK |
+| [langgenius/dify](https://github.com/langgenius/dify) | 161.889 | platform | Metadados OK |
+| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | 149.979 | framework | Metadados OK |
+| [earendil-works/pi](https://github.com/earendil-works/pi) | 123.848 | agent | Metadados OK |
+| [cline/cline](https://github.com/cline/cline) | 71.890 | agent | Metadados OK |
+| [microsoft/autogen](https://github.com/microsoft/autogen) | 61.968 | framework | Metadados OK · arquivado |
+| [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) | 61.254 | framework | Metadados OK |
+| [FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise) | 55.595 | platform | Metadados OK · arquivado |
+| [Aider-AI/aider](https://github.com/Aider-AI/aider) | 50.255 | agent | Metadados OK |
+| [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | 45.410 | framework | Metadados OK |
+| [microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel) | 28.807 | framework | Metadados OK |
 
 ### MCP, memória e automação
 
@@ -174,18 +173,18 @@ Cada JSON registra `repo`, `type`, `category`, `url`, `stars`, `license`, `pushe
 
 | Projeto | ★ | Tipo | Situação |
 |---|---:|---|---|
-| [n8n-io/n8n](https://github.com/n8n-io/n8n) | 209.907 | platform | Metadados OK |
-| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | 199.997 | tool | Metadados OK |
-| [browser-use/browser-use](https://github.com/browser-use/browser-use) | 120.415 | agent-tool | Metadados OK |
-| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 115.220 | tool | Metadados OK |
-| [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | 97.519 | awesome-list | Metadados OK |
-| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | 91.888 | mcp-collection | Metadados OK |
-| [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom) | 79.211 | context-tool | Metadados OK |
-| [mem0ai/mem0](https://github.com/mem0ai/mem0) | 68.687 | framework | Metadados OK |
-| [upstash/context7](https://github.com/upstash/context7) | 64.414 | mcp-server | Metadados OK |
-| [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | 55.013 | mcp-server | Metadados OK |
-| [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | 39.373 | mcp-server | Metadados OK |
-| [ComposioHQ/composio](https://github.com/ComposioHQ/composio) | 30.997 | agent-tool | Metadados OK |
+| [n8n-io/n8n](https://github.com/n8n-io/n8n) | 212.100 | platform | Metadados OK |
+| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | 209.687 | tool | Metadados OK |
+| [browser-use/browser-use](https://github.com/browser-use/browser-use) | 122.031 | agent-tool | Metadados OK |
+| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 119.699 | tool | Metadados OK |
+| [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | 98.495 | awesome-list | Metadados OK |
+| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | 92.241 | mcp-collection | Metadados OK |
+| [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom) | 80.841 | context-tool | Metadados OK |
+| [mem0ai/mem0](https://github.com/mem0ai/mem0) | 69.462 | framework | Metadados OK |
+| [upstash/context7](https://github.com/upstash/context7) | 65.444 | mcp-server | Metadados OK |
+| [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | 59.321 | mcp-server | Metadados OK |
+| [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | 40.131 | mcp-server | Metadados OK |
+| [ComposioHQ/composio](https://github.com/ComposioHQ/composio) | 31.290 | agent-tool | Metadados OK |
 
 ### Eficiência, roteamento e ferramentas
 
@@ -193,18 +192,17 @@ Cada JSON registra `repo`, `type`, `category`, `url`, `stars`, `license`, `pushe
 
 | Projeto | ★ | Tipo | Situação |
 |---|---:|---|---|
-| [microsoft/markitdown](https://github.com/microsoft/markitdown) | 194.552 | tool | Metadados OK |
-| [stablyai/orca](https://github.com/stablyai/orca) | 120.015 | agent-framework | Metadados OK |
-| [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | 85.981 | cli-tool | Metadados OK |
-| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 81.325 | agent-framework | Metadados OK |
-| [usestrix/strix](https://github.com/usestrix/strix) | 74.596 | security-tool | Metadados OK |
-| [BerriAI/litellm](https://github.com/BerriAI/litellm) | 62.968 | gateway | Metadados OK |
-| [run-llama/llama_index](https://github.com/run-llama/llama_index) | 52.856 | framework | Metadados OK |
-| [tashfeenahmed/freellmapi](https://github.com/tashfeenahmed/freellmapi) | 49.526 | gateway | Metadados OK |
-| [qdrant/qdrant](https://github.com/qdrant/qdrant) | 35.480 | database | Metadados OK |
-| [chroma-core/chroma](https://github.com/chroma-core/chroma) | 29.660 | database | Metadados OK |
-| [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) | 20.117 | agent-tool | Metadados OK |
-| All-Hands-AI/OpenHands | — | agent-platform | Não confirmado |
+| [microsoft/markitdown](https://github.com/microsoft/markitdown) | 198.411 | tool | Metadados OK |
+| [stablyai/orca](https://github.com/stablyai/orca) | 137.536 | agent-framework | Metadados OK |
+| [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | 87.799 | cli-tool | Metadados OK |
+| [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 82.405 | agent-framework | Metadados OK |
+| [usestrix/strix](https://github.com/usestrix/strix) | 77.538 | security-tool | Metadados OK |
+| [BerriAI/litellm](https://github.com/BerriAI/litellm) | 63.897 | gateway | Metadados OK |
+| [tashfeenahmed/freellmapi](https://github.com/tashfeenahmed/freellmapi) | 58.191 | gateway | Metadados OK |
+| [run-llama/llama_index](https://github.com/run-llama/llama_index) | 53.001 | framework | Metadados OK |
+| [qdrant/qdrant](https://github.com/qdrant/qdrant) | 35.705 | database | Metadados OK |
+| [chroma-core/chroma](https://github.com/chroma-core/chroma) | 29.763 | database | Metadados OK |
+| [vercel-labs/agent-desktop](https://github.com/vercel-labs/agent-desktop) | 26.612 | agent-tool | Metadados OK |
 
 ### Design, motion e gráficos
 
@@ -212,18 +210,18 @@ Cada JSON registra `repo`, `type`, `category`, `url`, `stars`, `license`, `pushe
 
 | Projeto | ★ | Tipo | Situação |
 |---|---:|---|---|
-| [twbs/bootstrap](https://github.com/twbs/bootstrap) | 175.023 | design-library | Metadados OK |
-| [excalidraw/excalidraw](https://github.com/excalidraw/excalidraw) | 135.387 | design-tool | Metadados OK |
-| [shadcn-ui/ui](https://github.com/shadcn-ui/ui) | 127.702 | design-library | Metadados OK |
-| [d3/d3](https://github.com/d3/d3) | 113.887 | data-visualization | Metadados OK |
-| [mui/material-ui](https://github.com/mui/material-ui) | 99.306 | design-library | Metadados OK |
-| [tailwindlabs/tailwindcss](https://github.com/tailwindlabs/tailwindcss) | 98.656 | design-library | Metadados OK |
-| [remotion-dev/remotion](https://github.com/remotion-dev/remotion) | 71.910 | video-framework | Metadados OK |
-| [chartjs/Chart.js](https://github.com/chartjs/Chart.js) | 67.785 | data-visualization | Metadados OK |
-| [penpot/penpot](https://github.com/penpot/penpot) | 62.208 | design-tool | Metadados OK |
-| [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | 40.718 | design-library | Metadados OK |
-| [fabricjs/fabric.js](https://github.com/fabricjs/fabric.js) | 31.552 | graphics-library | Metadados OK |
-| [processing/p5.js](https://github.com/processing/p5.js) | 24.326 | graphics-library | Metadados OK |
+| [twbs/bootstrap](https://github.com/twbs/bootstrap) | 175.133 | design-library | Metadados OK |
+| [excalidraw/excalidraw](https://github.com/excalidraw/excalidraw) | 136.290 | design-tool | Metadados OK |
+| [shadcn-ui/ui](https://github.com/shadcn-ui/ui) | 129.066 | design-library | Metadados OK |
+| [d3/d3](https://github.com/d3/d3) | 114.015 | data-visualization | Metadados OK |
+| [mui/material-ui](https://github.com/mui/material-ui) | 99.394 | design-library | Metadados OK |
+| [tailwindlabs/tailwindcss](https://github.com/tailwindlabs/tailwindcss) | 98.825 | design-library | Metadados OK |
+| [remotion-dev/remotion](https://github.com/remotion-dev/remotion) | 75.663 | video-framework | Metadados OK |
+| [chartjs/Chart.js](https://github.com/chartjs/Chart.js) | 67.823 | data-visualization | Metadados OK |
+| [penpot/penpot](https://github.com/penpot/penpot) | 62.734 | design-tool | Metadados OK |
+| [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | 40.750 | design-library | Metadados OK |
+| [fabricjs/fabric.js](https://github.com/fabricjs/fabric.js) | 31.566 | graphics-library | Metadados OK |
+| [processing/p5.js](https://github.com/processing/p5.js) | 24.431 | graphics-library | Metadados OK |
 
 ### Segurança e testes
 
@@ -231,18 +229,18 @@ Cada JSON registra `repo`, `type`, `category`, `url`, `stars`, `license`, `pushe
 
 | Projeto | ★ | Tipo | Situação |
 |---|---:|---|---|
-| [microsoft/playwright](https://github.com/microsoft/playwright) | 99.667 | testing-tool | Metadados OK |
-| [aquasecurity/trivy](https://github.com/aquasecurity/trivy) | 39.156 | security-tool | Metadados OK |
-| [gitleaks/gitleaks](https://github.com/gitleaks/gitleaks) | 30.827 | security-tool | Metadados OK |
-| [renovatebot/renovate](https://github.com/renovatebot/renovate) | 23.059 | maintenance-tool | Metadados OK |
-| [semgrep/semgrep](https://github.com/semgrep/semgrep) | 17.565 | security-tool | Metadados OK |
-| [vitest-dev/vitest](https://github.com/vitest-dev/vitest) | 17.354 | testing-tool | Metadados OK |
-| [zaproxy/zaproxy](https://github.com/zaproxy/zaproxy) | 16.142 | security-tool | Metadados OK |
-| [pytest-dev/pytest](https://github.com/pytest-dev/pytest) | 14.675 | testing-tool | Metadados OK |
-| [anchore/grype](https://github.com/anchore/grype) | 13.223 | security-tool | Metadados OK |
-| [dependency-check/DependencyCheck](https://github.com/dependency-check/DependencyCheck) | 7.764 | security-tool | Metadados OK |
-| [ossf/scorecard](https://github.com/ossf/scorecard) | 5.818 | security-tool | Metadados OK |
-| trufflesuite/trufflehog | — | security-tool | Não confirmado |
+| [microsoft/playwright](https://github.com/microsoft/playwright) | 101.048 | testing-tool | Metadados OK |
+| [aquasecurity/trivy](https://github.com/aquasecurity/trivy) | 39.730 | security-tool | Metadados OK |
+| [gitleaks/gitleaks](https://github.com/gitleaks/gitleaks) | 31.335 | security-tool | Metadados OK |
+| [renovatebot/renovate](https://github.com/renovatebot/renovate) | 23.266 | maintenance-tool | Metadados OK |
+| [semgrep/semgrep](https://github.com/semgrep/semgrep) | 17.940 | security-tool | Metadados OK |
+| [vitest-dev/vitest](https://github.com/vitest-dev/vitest) | 17.453 | testing-tool | Metadados OK |
+| [zaproxy/zaproxy](https://github.com/zaproxy/zaproxy) | 16.274 | security-tool | Metadados OK |
+| [pytest-dev/pytest](https://github.com/pytest-dev/pytest) | 14.760 | testing-tool | Metadados OK |
+| [anchore/grype](https://github.com/anchore/grype) | 13.345 | security-tool | Metadados OK |
+| [dependency-check/DependencyCheck](https://github.com/dependency-check/DependencyCheck) | 7.790 | security-tool | Metadados OK |
+| [ossf/scorecard](https://github.com/ossf/scorecard) | 5.868 | security-tool | Metadados OK |
+| `trufflesuite/trufflehog` | — | security-tool | Não confirmado (HTTP 404) |
 
 ### Finanças, SDKs e avaliação
 
@@ -250,18 +248,17 @@ Cada JSON registra `repo`, `type`, `category`, `url`, `stars`, `license`, `pushe
 
 | Projeto | ★ | Tipo | Situação |
 |---|---:|---|---|
-| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | 121.505 | finance-agent | Metadados OK |
-| [microsoft/qlib](https://github.com/microsoft/qlib) | 50.159 | finance-framework | Metadados OK |
-| [QuantConnect/Lean](https://github.com/QuantConnect/Lean) | 22.463 | finance-framework | Metadados OK |
-| [google/adk-python](https://github.com/google/adk-python) | 22.159 | agent-sdk | Metadados OK |
-| [AI4Finance-Foundation/FinGPT](https://github.com/AI4Finance-Foundation/FinGPT) | 21.540 | finance-framework | Metadados OK |
-| [pydantic/pydantic-ai](https://github.com/pydantic/pydantic-ai) | 21.102 | agent-framework | Metadados OK |
-| [openai/evals](https://github.com/openai/evals) | 19.721 | evals-framework | Metadados OK |
-| [AI4Finance-Foundation/FinRL](https://github.com/AI4Finance-Foundation/FinRL) | 17.024 | finance-framework | Metadados OK |
-| [AI4Finance-Foundation/FinRobot](https://github.com/AI4Finance-Foundation/FinRobot) | 8.399 | finance-agent | Metadados OK |
-| [openai/openai-agents-js](https://github.com/openai/openai-agents-js) | 3.996 | agent-sdk | Metadados OK |
-| openbb-finance/OpenBB | — | finance-platform | Não confirmado |
-| openai/agents-python | — | agent-sdk | Não confirmado |
+| [TauricResearch/TradingAgents](https://github.com/TauricResearch/TradingAgents) | 123.751 | finance-agent | Metadados OK |
+| [microsoft/qlib](https://github.com/microsoft/qlib) | 50.572 | finance-framework | Metadados OK |
+| [QuantConnect/Lean](https://github.com/QuantConnect/Lean) | 22.707 | finance-framework | Metadados OK |
+| [google/adk-python](https://github.com/google/adk-python) | 22.351 | agent-sdk | Metadados OK |
+| [AI4Finance-Foundation/FinGPT](https://github.com/AI4Finance-Foundation/FinGPT) | 21.713 | finance-framework | Metadados OK |
+| [pydantic/pydantic-ai](https://github.com/pydantic/pydantic-ai) | 21.382 | agent-framework | Metadados OK |
+| [openai/evals](https://github.com/openai/evals) | 19.803 | evals-framework | Metadados OK |
+| [AI4Finance-Foundation/FinRL](https://github.com/AI4Finance-Foundation/FinRL) | 17.181 | finance-framework | Metadados OK |
+| [AI4Finance-Foundation/FinRobot](https://github.com/AI4Finance-Foundation/FinRobot) | 8.478 | finance-agent | Metadados OK |
+| [openai/openai-agents-js](https://github.com/openai/openai-agents-js) | 4.030 | agent-sdk | Metadados OK |
+| `openai/agents-python` | — | agent-sdk | Não confirmado (HTTP 404) |
 
 ### Marketing e conhecimento
 
@@ -269,18 +266,18 @@ Cada JSON registra `repo`, `type`, `category`, `url`, `stars`, `license`, `pushe
 
 | Projeto | ★ | Tipo | Situação |
 |---|---:|---|---|
-| [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | 147.202 | skill-collection | Metadados OK |
-| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 93.863 | platform | Metadados OK |
-| [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | 59.345 | skill-collection | Metadados OK |
-| [microsoft/graphrag](https://github.com/microsoft/graphrag) | 36.608 | framework | Metadados OK |
-| [getzep/graphiti](https://github.com/getzep/graphiti) | 32.674 | knowledge-tool | Metadados OK |
-| [vercel/ai](https://github.com/vercel/ai) | 27.830 | sdk | Metadados OK |
-| [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo) | 27.603 | skill-collection | Metadados OK |
-| [zubair-trabzada/geo-seo-claude](https://github.com/zubair-trabzada/geo-seo-claude) | 11.589 | skill-collection | Metadados OK |
-| [TheCraigHewitt/seomachine](https://github.com/TheCraigHewitt/seomachine) | 7.589 | skill-tool | Metadados OK |
-| [aaron-he-zhu/aaron-marketing-skills](https://github.com/aaron-he-zhu/aaron-marketing-skills) | 3.109 | skill-collection | Metadados OK |
-| [RankSpotAI/awesome-seo-agent-skills](https://github.com/RankSpotAI/awesome-seo-agent-skills) | 45 | awesome-list | Metadados OK |
-| postiz-app/postiz | — | automation-platform | Não confirmado |
+| [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | 154.062 | skill-collection | Metadados OK |
+| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 94.696 | platform | Metadados OK |
+| [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | 62.581 | skill-collection | Metadados OK |
+| [microsoft/graphrag](https://github.com/microsoft/graphrag) | 36.751 | framework | Metadados OK |
+| [getzep/graphiti](https://github.com/getzep/graphiti) | 33.085 | knowledge-tool | Metadados OK |
+| [AgriciDaniel/claude-seo](https://github.com/AgriciDaniel/claude-seo) | 32.336 | skill-collection | Metadados OK |
+| [vercel/ai](https://github.com/vercel/ai) | 28.197 | sdk | Metadados OK |
+| [zubair-trabzada/geo-seo-claude](https://github.com/zubair-trabzada/geo-seo-claude) | 11.857 | skill-collection | Metadados OK |
+| [TheCraigHewitt/seomachine](https://github.com/TheCraigHewitt/seomachine) | 7.639 | skill-tool | Metadados OK |
+| [aaron-he-zhu/aaron-marketing-skills](https://github.com/aaron-he-zhu/aaron-marketing-skills) | 3.197 | skill-collection | Metadados OK |
+| [RankSpotAI/awesome-seo-agent-skills](https://github.com/RankSpotAI/awesome-seo-agent-skills) | 29 | awesome-list | Metadados OK |
+| `postiz-app/postiz` | — | automation-platform | Não confirmado (HTTP 404) |
 
 ### Descobertas e repositórios corrigidos
 
@@ -288,18 +285,18 @@ Cada JSON registra `repo`, `type`, `category`, `url`, `stars`, `license`, `pushe
 
 | Projeto | ★ | Tipo | Situação |
 |---|---:|---|---|
-| [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | 187.332 | skill | Metadados OK |
-| [supabase/supabase](https://github.com/supabase/supabase) | 114.701 | platform | Metadados OK |
-| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 93.030 | agent-platform | Metadados OK |
-| [astral-sh/uv](https://github.com/astral-sh/uv) | 91.802 | dev-tool | Metadados OK |
-| [openbq-org/OpenBB](https://github.com/openbq-org/OpenBB) | 75.265 | finance-platform | Metadados OK |
-| [gitroomhq/postiz-app](https://github.com/gitroomhq/postiz-app) | 41.186 | automation-platform | Metadados OK |
-| [oraios/serena](https://github.com/oraios/serena) | 31.231 | mcp-server | Metadados OK |
-| [openai/openai-agents-python](https://github.com/openai/openai-agents-python) | 30.577 | agent-sdk | Metadados OK |
-| [trufflesecurity/trufflehog](https://github.com/trufflesecurity/trufflehog) | 29.053 | security-tool | Metadados OK |
-| [cloudflare/workers-sdk](https://github.com/cloudflare/workers-sdk) | 4.710 | sdk | Metadados OK |
-| [badlogic/pi-skills](https://github.com/badlogic/pi-skills) | 2.654 | skill-collection | Metadados OK |
-| github/docs | — | documentation | Não confirmado |
+| [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | 198.542 | skill | Metadados OK |
+| [supabase/supabase](https://github.com/supabase/supabase) | 115.468 | platform | Metadados OK |
+| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 94.318 | agent-platform | Metadados OK |
+| [astral-sh/uv](https://github.com/astral-sh/uv) | 92.642 | dev-tool | Metadados OK |
+| [openbq-org/OpenBB](https://github.com/openbq-org/OpenBB) | 75.726 | finance-platform | Metadados OK |
+| [gitroomhq/postiz-app](https://github.com/gitroomhq/postiz-app) | 42.397 | automation-platform | Metadados OK |
+| [oraios/serena](https://github.com/oraios/serena) | 31.696 | mcp-server | Metadados OK |
+| [openai/openai-agents-python](https://github.com/openai/openai-agents-python) | 30.870 | agent-sdk | Metadados OK |
+| [trufflesecurity/trufflehog](https://github.com/trufflesecurity/trufflehog) | 29.652 | security-tool | Metadados OK |
+| [github/docs](https://github.com/github/docs) | 21.563 | documentation | Metadados OK |
+| [cloudflare/workers-sdk](https://github.com/cloudflare/workers-sdk) | 4.749 | sdk | Metadados OK |
+| [badlogic/pi-skills](https://github.com/badlogic/pi-skills) | 2.673 | skill-collection | Metadados OK |
 
 ## Como usar sem desperdiçar tokens ou comprometer segurança
 
@@ -310,4 +307,4 @@ Cada JSON registra `repo`, `type`, `category`, `url`, `stars`, `license`, `pushe
 5. Meça economia de tokens com cenários equivalentes; números de READMEs não são garantias.
 6. Para novas inclusões, siga [repository-curation](skills/repository-curation/SKILL.md), execute `python scripts/validate_catalog.py` e atualize este índice.
 
-**Nota:** `Prompt Motion` é uma galeria externa: [ficha](tools/prompt-motion/README.md). As 11 Skills iniciais são trabalhos autorais/reconstruídos, não necessariamente testados nem espelhos de terceiros.
+O catálogo também reúne a [ficha da galeria Prompt Motion](tools/prompt-motion/README.md) e o [índice das 34 Skills autorais ou reconstruídas](skills/README.md).

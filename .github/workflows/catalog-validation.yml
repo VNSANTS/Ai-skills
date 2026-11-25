@@ -1,17 +1,6 @@
 name: Catalog validation
 
-on:
-  push:
-    paths:
-      - 'catalog/**'
-      - 'scripts/validate_catalog.py'
-      - '.github/workflows/catalog-validation.yml'
-  pull_request:
-    paths:
-      - 'catalog/**'
-      - 'scripts/validate_catalog.py'
-      - '.github/workflows/catalog-validation.yml'
-  workflow_dispatch:
+on: [push, pull_request, workflow_dispatch]
 
 permissions:
   contents: read
@@ -19,11 +8,45 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-      - name: Validate metadata offline
-        run: python scripts/validate_catalog.py
+      - name: Install validation dependencies
+        run: python -m pip install -r scripts/requirements-validation.txt
+      - name: Check catalog, skill metadata and documentation
+        run: |
+          python scripts/validate_catalog.py
+          python scripts/validate_library.py
+      - name: Run regression tests
+        run: python -m unittest discover -s tests -v
+
+  snapshot-windows:
+    runs-on: windows-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Test snapshot import via Windows PowerShell
+        run: python -m unittest discover -s tests -p test_import_repository_snapshot.py -v
+
+  codex-discovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Download the official Codex CLI 0.172.0 test binary
+        working-directory: ${{ runner.temp }}
+        run: |
+          curl --fail --silent --show-error --location --retry 2 --output codex.tar.gz https://github.com/openai/codex/releases/download/rust-v0.172.0/codex-x86_64-unknown-linux-musl.tar.gz
+          echo 'a2342a8f7f68f088be30620ccfe9cb84162c93a6b56177855961cda3ed6be392  codex.tar.gz' | sha256sum --check
+          tar -xzf codex.tar.gz
+      - name: Load the project skills without invoking a model
+        run: python scripts/check_codex_discovery.py --codex "$RUNNER_TEMP/codex-x86_64-unknown-linux-musl"

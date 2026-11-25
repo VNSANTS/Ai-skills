@@ -49,7 +49,7 @@ Track actual input/output tokens and task success when the provider exposes usag
 
 ## Medição comparável
 
-Use a mesma tarefa e critérios de aceite, registre modelo, número de chamadas, tokens de entrada e saída quando disponíveis, e conclusão dos checks. Se o método poupou contexto mas aumentou chamadas ou deixou um critério pendente, registre esses resultados junto ao total de tokens.
+Use a mesma tarefa e os mesmos critérios de aceite. Registre, em cada execução, modelo, número de chamadas, verificações concluídas, decisão obtida e tokens de entrada e saída quando disponíveis. Sem contagem de tokens, informe a medida observada em sua unidade, como arquivos ou bytes lidos. Relate se a redução de contexto exigiu mais chamadas ou deixou um critério pendente.
 
 ## Status
 Original library skill. Documentation created; no runtime benchmark or agent compatibility test has yet been performed.

@@ -17,4 +17,6 @@ Use o fluxo completo quando dados, usuários ou operações dependam da mudança
 4. Quando houver autorização para executar, avance por estágio e confira revisão e ambiente antes de qualquer alteração. Registre a evidência observada. Se o estágio falhar, interrompa a expansão e siga o procedimento de recuperação autorizado.
 5. Verifique o resultado com sinais observáveis do público afetado. Confirme os dados gerados no intervalo, registre o estado final e encaminhe itens de monitoramento que tenham responsável.
 
+Ao transferir registros, use o mesmo horário de corte na origem e no destino. Compare IDs e campos que precisam ser preservados. Quando um horário representar um instante, considere o fuso. Procure IDs ausentes, inesperados e duplicados mesmo quando os totais coincidirem. Se a recuperação importar dados, repita a importação em uma cópia e confira se cada registro existente ou criado no intervalo continua íntegro e aparece uma única vez.
+
 Quando houver processo formal de implantação, use seus critérios e aprovações. Consulte [o exemplo](references/example.md) para uma transição que precisa preservar registros criados durante o piloto.

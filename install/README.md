@@ -2,6 +2,14 @@
 
 **Catalogar não instala.** Esta pasta documenta como instalar, testar, desativar e remover ferramentas em ambientes próprios (Termux, Linux, Windows, Codex CLI, Claude Code etc.). Instalação no terminal não significa instalação permanente dentro do ChatGPT.
 
+## Usar as skills próprias em um projeto
+
+Se o agente consegue ler este repositório, indique a pasta `skills/task-orchestration/` no pedido. A pasta inclui um roteiro de exemplo em `references/`.
+
+No Codex CLI, copie a pasta completa para `.agents/skills/task-orchestration/` na raiz do projeto consumidor. Para usar especialistas, copie as pastas desejadas para o mesmo diretório. A combinação para esclarecer, delegar e revisar inclui `task-clarification`, `model-agent-routing` e `deliverable-review`. Escolha skills de domínio pelo [índice](../skills/README.md).
+
+Abra o Codex no projeto e confira se a lista de skills inclui `task-orchestration`. Faça um teste com arquivos de exemplo e confira a saída. Se o agente aceitar referências explícitas, também pode indicar o caminho do `SKILL.md` diretamente. Para retirar a cópia, remova apenas as pastas que adicionou ao projeto. [Exemplo de skills de projeto mantidas pela OpenAI](https://github.com/openai/openai-agents-python/tree/main/.agents/skills).
+
 ## Método observado: npx
 
 No Termux foi observado o comando:

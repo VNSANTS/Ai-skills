@@ -5,25 +5,28 @@ description: Turn a user task into a verified result by clarifying scope, inspec
 
 # Orquestrar da tarefa à entrega
 
-## 1. Entenda a tarefa e o projeto
+Execute o trabalho até a entrega verificada. Encerre no plano quando o usuário pedir apenas planejamento. Para uma tarefa simples, faça a leitura necessária, execute e confira diretamente.
 
-Use [task-clarification](../task-clarification/SKILL.md) para extrair o brief. Identifique regras do projeto, arquivos e ambiente relevantes, trabalho em curso, comandos de verificação e limites de autorização. Inspecione primeiro o que pode alterar escopo, dependências ou risco. Para tarefas diretas, execute e valide sem criar um time.
+## 1. Feche o escopo
 
-## 2. Crie o roteiro executável
+Leia o pedido, as regras aplicáveis, os arquivos de entrada e o trabalho em curso. Defina destinatário, entregas, destinos, critérios de aceite e limites de autorização. Se uma ambiguidade material persistir, mostre as consequências, pergunte pela decisão que falta e avance no que independe dela. Incorpore correções sem repetir etapas ainda válidas.
 
-Use o modelo mais capaz disponível para decisões de arquitetura ou com alto custo de erro. Separe etapas por resultado, não por ferramenta. Para cada etapa, registre responsável, insumos, dependências, entrega, critério de aceite e ação se falhar. Defina a ordem crítica, os pontos de integração e o que pode correr ao mesmo tempo.
+Procure pelo nome as skills auxiliares no catálogo do ambiente ou no projeto indicado e abra a correspondência disponível. `task-clarification` devolve o brief a este fluxo. `model-agent-routing` apoia a escolha de recursos e `deliverable-review` apoia a conferência final. Se apenas esta pasta estiver instalada, siga os passos desta página com os recursos existentes. A execução pode prosseguir sem um índice, pastas irmãs ou instalações adicionais.
 
-Use [model-agent-routing](../model-agent-routing/SKILL.md) para selecionar recursos por etapa e revise a alocação quando aparecer um bloqueio ou evidência nova. Cada tarefa paralela deve ter fronteira de escrita clara ou ser somente leitura. Use cópias de trabalho isoladas quando as alterações independentes ainda precisarem tocar o mesmo código. Integre alterações em sequência.
+## 2. Distribua o trabalho
 
-## 3. Delegue e acompanhe
+Organize as etapas pelo resultado e pelas dependências. Para cada etapa relevante, identifique entrada, responsável, recurso realmente disponível, entrega, critério de aceite e alternativa se ela falhar. Se houver uma skill de domínio pertinente, localize-a pelo nome ou pela tarefa e leia suas instruções antes de aplicá-la.
 
-- Envie a cada agente o objetivo, entradas e revisão, escopo de escrita, skills e ferramentas selecionadas, limites de autorização, formato de saída, verificação esperada e condição para parar. Compartilhe somente o contexto necessário. Mantenha credenciais no ambiente autorizado.
-- Registre atribuição planejada e executor real. Peça o resultado, evidência, arquivos alterados e bloqueios. Se houver dependência incompleta, execute etapas independentes e preserve os resultados válidos. Se uma verificação falhar, investigue a causa e tente uma recuperação compatível com o escopo.
-- Ao falhar uma ação externa ou mutação, consulte o estado antes de repetir. Se não houver agentes, execute localmente em sequência, mantendo os mesmos critérios e sem representar etapas próprias como delegadas.
-- Aplique correções do usuário ao brief e invalide verificações e atribuições atingidas por elas. Peça aprovação quando exigida para publicar, gastar ou produzir um efeito externo.
+Confira capacidades, modelo selecionável, permissões, custo e acesso às entradas. Use cálculos ou testes determinísticos para resultados reproduzíveis. Para arquitetura, planejamento complexo e decisões de alto impacto, prefira o modelo mais capaz que atenda às restrições. Se um modelo for obrigatório e o ambiente não confirmar sua seleção, consulte o usuário antes de substituí-lo. Sob orçamento fechado, siga por um recurso com custo adicional conhecido e autorizado.
+
+## 3. Execute e recupere
+
+Delegue etapas independentes quando houver benefício, permissão e vaga. Forneça objetivo, versão das entradas, limites de escrita, recursos escolhidos, formato de retorno e critério de aceite. Separe áreas de escrita ou atribua uma revisão somente leitura. Compartilhe somente o contexto necessário. Peça a evidência, o resultado e eventuais bloqueios.
+
+Se não houver agente disponível, execute as etapas em sequência. Se um agente falhar ou entregar parcialmente, examine o que foi gravado e o que já passou na verificação. Reatribua a parte faltante ou assuma-a localmente, dentro da autorização existente. Confira o estado de qualquer ação com efeito externo antes de repeti-la. Registre a causa da mudança e o executor efetivo.
 
 ## 4. Integre e entregue
 
-Compare interfaces, arquivos e pressupostos entre as saídas. Execute verificações da versão integrada e aplique [deliverable-review](../deliverable-review/SKILL.md) antes da entrega. O coordenador confirma cada critério de aceite e relata resultados, pendências, decisões assumidas e bloqueios. Conclua com o resultado solicitado sempre que houver trabalho autorizado que possa ser realizado.
+Compare as saídas entre si e com as entradas. Em resultados de alto impacto, peça a um revisor uma conferência independente nas fontes. Sem revisor, use outro método de cálculo ou teste e identifique quem o executou. Resolva divergências antes de incorporar resultados. Reabra a versão final no formato pedido, confira cada requisito, corrija falhas e repita os testes afetados. Entregue os arquivos solicitados e indique decisões assumidas e pendências materiais.
 
-[Leia o exemplo de roteiro, delegação e recuperação](references/example.md) se precisar de um modelo de execução.
+[Exemplo de roteiro, delegação e recuperação](references/example.md)

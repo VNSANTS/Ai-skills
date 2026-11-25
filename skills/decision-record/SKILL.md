@@ -18,6 +18,8 @@ description: Compare options and document consequential project decisions with e
 4. **Teste a sensibilidade.** Identifique a premissa com maior chance de inverter a escolha. Quando uma verificação barata puder resolvê-la, defina um piloto com prazo, responsável, indicador e limiar de avanço.
 5. **Registre o compromisso.** Informe opção, justificativa, evidências, riscos aceitos, responsável e gatilho de revisão. Se o usuário pediu uma recomendação, marque a decisão como proposta até a confirmação de quem decide.
 
+Quando já houver uma aprovação, cite o registro que identifica quem aprovou, a etapa, o público e a vigência. Registre separadamente qualquer expansão que ainda dependa de decisão.
+
 ## Saída
 
 | Campo | Conteúdo |
