@@ -94,6 +94,14 @@ class LibraryTest(unittest.TestCase):
         (external / "README.md").write_text("[external](missing.md)", encoding="utf-8")
         self.assertEqual(self.errors(), [])
 
+    def test_dependency_directories_do_not_contribute_pages(self):
+        for name in ("node_modules", "venv"):
+            directory = self.root / name
+            directory.mkdir()
+            (directory / "README.md").write_text("[dependency](missing.md)", encoding="utf-8")
+        (self.root / "venv/pyvenv.cfg").touch()
+        self.assertEqual(self.errors(), [])
+
     def test_verified_projects_and_catalog_files_are_discoverable(self):
         directory = self.root / "catalog"
         directory.mkdir()

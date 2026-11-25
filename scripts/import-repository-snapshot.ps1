@@ -3,7 +3,8 @@
 param(
     [ValidateNotNullOrEmpty()][string]$Source = 'https://github.com/ctresb/leis.git',
     [ValidateNotNullOrEmpty()][string]$Branch = 'main',
-    [ValidateNotNullOrEmpty()][string]$Destination = 'repositories/leis'
+    [ValidateNotNullOrEmpty()][string]$Destination = 'repositories/leis',
+    [switch]$Stage
 )
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
@@ -46,5 +47,7 @@ if ([IO.Path]::DirectorySeparatorChar -eq '\') {
 }
 
 $scriptPath = (Join-Path $PSScriptRoot 'import-repository-snapshot.sh').Replace('\', '/')
-& $bash $scriptPath $Source $Branch $Destination
+$arguments = @($scriptPath, $Source, $Branch, $Destination)
+if ($Stage) { $arguments += '--stage' }
+& $bash @arguments
 if ($LASTEXITCODE -ne 0) { throw "Snapshot import failed (exit code $LASTEXITCODE)." }

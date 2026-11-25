@@ -33,7 +33,7 @@ Comece pela [task-orchestration](skills/task-orchestration/SKILL.md). Dê a tare
 
 > Use a task-orchestration para transformar os CSVs de inscrições deste projeto em um resumo para a coordenação. Entregue a contagem por oficina, identifique divergências e confira os totais com os arquivos de origem.
 
-Para usá-la num projeto seu, siga o [guia de uso local](install/README.md#usar-as-skills-próprias-em-um-projeto). Para escolher outra especialidade, consulte as [skills por tarefa](skills/README.md).
+Para experimentá-la, use o [exercício com dois CSVs e gabarito](examples/recebimentos/README.md). Para usá-la num projeto seu, siga o [guia de uso local](install/README.md#usar-as-skills-próprias-em-um-projeto). Para escolher outra especialidade, consulte as [skills por tarefa](skills/README.md).
 
 ## Princípios
 

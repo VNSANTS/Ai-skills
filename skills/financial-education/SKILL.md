@@ -18,7 +18,7 @@ description: Explain budgets, saving, debt, interest, and investment scenarios f
 2. Calcule primeiro os fluxos brutos e depois encargos, taxas e impostos aplicáveis. Se o objetivo for poder de compra, expresse o saldo líquido em valores reais.
 3. Apresente as premissas e pelo menos um cenário adverso. Confira o cálculo com um exemplo simples e identifique o que pode alterar o resultado, como prazo menor ou saque antecipado.
 
-Em um orçamento, indique o saldo inicial e o período. Reconcilie `saldo final = saldo inicial + entradas − saídas`. Se um gasto ainda é previsto, compare seu valor com o dinheiro disponível e explique em palavras quanto sobra ou falta. Use valores fictícios em exercícios coletivos.
+Em um orçamento, indique o saldo inicial e o período. Reconcilie `saldo final = saldo inicial + entradas − saídas`. Se um gasto ainda é previsto, compare seu valor com o dinheiro disponível e explique em palavras quanto sobra ou falta. Valores fictícios bastam para praticar essas contas em grupo.
 
 ## Source and status
 - Adapted from user-provided original Markdown documents: 03_Finance_Parte1.md, 03_Finance_Parte2.md.

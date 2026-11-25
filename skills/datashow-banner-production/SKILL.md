@@ -1,24 +1,11 @@
 ---
 name: datashow-banner-production
-description: Compose and export panoramic banners for church projectors and datashow screens. Use for 2987 × 800 px artwork, background extension, and projection legibility checks.
+description: Design, export and check banners for projector screens, events, classrooms and wide displays. Use for a specified canvas, background extension, cropping or projected legibility.
 ---
 
-# Datashow banner production
+# Banner para projeção
 
-- Target output: 2987 × 800 px, panoramic aspect ratio about 3.73:1.
-- Keep principal message central, expand backgrounds laterally, and protect against display cropping.
-- Avoid stretching faces, logos, lettering or other subjects. Extend scenery rather than scaling the central composition disproportionately.
-- Prioritize clean typography, contrast and natural composition; avoid gratuitous repeated decorations.
-- If reference photos are provided, preserve recognizability and avoid inventing details.
-- Inspect exported dimensions and legibility before claiming completion.
-
-## Composição e exportação
-
-1. Confirme resolução de destino e conteúdo obrigatório. Se a resolução não foi informada, use 2987 × 800 px como padrão desta composição.
-2. Posicione título e conteúdo obrigatório dentro de guias provisórias. Se a projeção tem overscan conhecido, ajuste as guias ao recorte real. Prolongue as laterais do fundo preservando a proporção do assunto.
-3. Visualize a peça inteira reduzida e simule o recorte nas bordas. Se o título perder leitura, ajuste contraste, espessura ou fundo antes da exportação.
-4. Confira as dimensões no arquivo exportado e, se houver acesso ao projetor, teste legibilidade e recorte na tela. Registre qual conferência foi feita.
-
-Registre quanto foi recortado em cada borda e confira se o texto obrigatório permanece inteiro na imagem resultante. Para uma tela de outra proporção, simule o modo de encaixe que será usado. Ao entregar a peça, indique o modo de exibição e transcreva a mensagem para leitura em voz alta.
-
-**Status:** fluxo derivado de preferências do usuário. Identifique separadamente a conferência do arquivo, a simulação de exibição e o ensaio com o projetor.
+1. Descubra o formato que vai receber a peça. Use as dimensões do pedido, da tela ou do arquivo de referência. O perfil panorâmico de 2987 × 800 px tem proporção de aproximadamente 3,73:1. Para uma tela diferente, use a proporção do destino. Se ela continuar desconhecida e definir o recorte for indispensável, peça a dimensão e avance com o conteúdo central em uma composição ajustável.
+2. Liste a mensagem obrigatória e marque a margem de recorte ou *overscan* conhecida. Posicione título e informações essenciais dentro das guias. Prolongue o cenário nas laterais preservando proporções de rostos, marcas e letras. Se houver foto de referência, mantenha os traços que identificam o assunto.
+3. Confira contraste e tamanho de leitura em uma prévia reduzida. Simule o modo de encaixe da tela e anote o recorte usado em cada borda. Se alguma palavra for cortada, reposicione o texto e teste outra vez. Deixe disponível a mensagem por escrito para quem for anunciá-la.
+4. Reabra o arquivo exportado e confira suas dimensões. Quando houver acesso ao equipamento, verifique a peça projetada da distância do público. Informe o formato exportado, o modo de exibição e as condições em que a legibilidade foi conferida.

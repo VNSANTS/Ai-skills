@@ -90,7 +90,10 @@ def first_party_pages(root: Path):
         if here == root / "repositories":
             dirs.clear()
         else:
-            dirs[:] = sorted(d for d in dirs if not d.startswith(".") or d == ".github")
+            dirs[:] = sorted(d for d in dirs
+                             if (not d.startswith(".") or d == ".github")
+                             and d not in ("node_modules", "__pycache__")
+                             and not (here / d / "pyvenv.cfg").is_file())
         for name in sorted(files):
             if name.endswith(".md"):
                 yield here / name

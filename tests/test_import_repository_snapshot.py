@@ -1,4 +1,5 @@
 """Exercise the shipped importer with disposable local Git repositories, offline."""
+import json
 import os
 from pathlib import Path
 import subprocess
@@ -52,10 +53,12 @@ class SnapshotTests(unittest.TestCase):
         self.git("add", "-f", "--", ".")
         self.git("commit", "-qm", "fixture")
 
-    def start(self, destination="repositories/demo", *, source=None, branch="main", cwd=None, env=None):
+    def start(self, destination="repositories/demo", *, source=None, branch="main", stage=False, cwd=None, env=None):
         source = str(self.source) if source is None else source
         args = (["-Source", source, "-Branch", branch, "-Destination", destination]
                 if os.name == "nt" else [source, branch, destination])
+        if stage:
+            args.append("-Stage" if os.name == "nt" else "--stage")
         return subprocess.Popen([*ENTRY, *args], cwd=cwd or self.receiver, env=env or self.env,
                                 stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 
@@ -106,6 +109,7 @@ class SnapshotTests(unittest.TestCase):
         self.assertEqual({p.relative_to(self.target).as_posix() for p in self.target.rglob("*")
                           if p.is_file()}, set(files) | {MANIFEST})
         self.assertFalse((self.target / ".git").exists())
+        self.assertEqual(self.git("ls-files", cwd=self.receiver), b"")
         for name in files:
             self.assertEqual((self.target / name).read_bytes(), self.git("show", f"{selected}:{name}"))
         if os.name != "nt":
@@ -136,6 +140,74 @@ class SnapshotTests(unittest.TestCase):
         code, output = self.run_import(destination=destination + "/")
         self.assertEqual(code, 0, output)
         self.assertTrue((self.receiver / destination / MANIFEST).is_file())
+
+    def test_staged_snapshot_restores_from_an_independent_clone(self):
+        files = {".gitignore": b"ignored.bin\n", "ignored.bin": bytes(range(256)),
+                 "raw.txt": b"exact\r\nbytes\r\n", "run": b"fixture"}
+        self.commit(files)
+        self.git("update-index", "--chmod=+x", "--", "run")
+        self.git("commit", "-qm", "source executable")
+        source_tree = self.git("ls-tree", "-rz", "HEAD").split(b"\0")[:-1]
+        # A normal git add would honor the receiver's text rules and the source's ignore rule.
+        (self.receiver / ".gitattributes").write_bytes(b"repositories/** text eol=lf\n")
+        unrelated = self.receiver / "unrelated"
+        unrelated.write_bytes(b"already staged")
+        self.git("add", "--", ".gitattributes", "unrelated", cwd=self.receiver)
+        unrelated.write_bytes(b"unstaged change")
+        code, output = self.run_import(stage=True)
+        self.assertEqual(code, 0, output)
+        self.assertEqual(self.git("show", ":unrelated", cwd=self.receiver), b"already staged")
+        self.assertEqual(unrelated.read_bytes(), b"unstaged change")
+        self.git("commit", "-qm", "snapshot", cwd=self.receiver)
+        self.source.rename(self.root / "upstream offline")
+        restored = self.root / "restored"
+        self.git("clone", "--no-local", "--no-checkout", "--", str(self.receiver), str(restored), cwd=self.root)
+        restored_tree = self.git("ls-tree", "-rz", "HEAD:repositories/demo", cwd=restored).split(b"\0")[:-1]
+        self.assertEqual([entry for entry in restored_tree if not entry.endswith(b"\t" + MANIFEST.encode())],
+                         source_tree)
+        for name, content in files.items():
+            self.assertEqual(self.git("cat-file", "blob", f"HEAD:repositories/demo/{name}", cwd=restored), content)
+        self.assertEqual(self.git("cat-file", "blob", f"HEAD:repositories/demo/{MANIFEST}", cwd=restored),
+                         (self.target / MANIFEST).read_bytes())
+
+    def test_staging_conflicts_preserve_index_and_files(self):
+        lock = self.receiver / ".git" / "index.lock"
+        lock.write_bytes(b"another git process")
+        self.assert_rejected("index is locked", stage=True)
+        self.assertEqual(lock.read_bytes(), b"another git process")
+        lock.unlink()
+        self.target.mkdir(parents=True)
+        tracked = self.target / "prior"
+        tracked.write_bytes(b"staged before import")
+        self.git("add", "--", "repositories/demo/prior", cwd=self.receiver)
+        tracked.unlink()
+        self.target.rmdir()
+        before = self.git("ls-files", "--stage", cwd=self.receiver)
+        self.assert_rejected("index already contains entries", stage=True)
+        self.assertEqual(self.git("ls-files", "--stage", cwd=self.receiver), before)
+        self.assertFalse(lock.exists())
+        self.git("update-index", "--force-remove", "repositories/demo/prior", cwd=self.receiver)
+        ancestor = self.receiver / "repositories"
+        ancestor.rmdir()
+        ancestor.write_bytes(b"previously staged ancestor")
+        self.git("add", "--", "repositories", cwd=self.receiver)
+        ancestor.unlink()
+        self.assert_rejected("conflicting ancestor", stage=True)
+        self.assertEqual(self.git("show", ":repositories", cwd=self.receiver), b"previously staged ancestor")
+        self.assertFalse(ancestor.exists())
+
+    def test_external_transport_is_never_started_and_user_denials_are_kept(self):
+        trace = self.root / "transport-trace.jsonl"
+        self.assert_rejected("Clone failed", source="snapshotfixture::local",
+                             env={**self.env, "GIT_ALLOW_PROTOCOL": "file:snapshotfixture",
+                                  "GIT_TRACE2_EVENT": trace.as_posix()})
+        events = [json.loads(line) for line in trace.read_text(encoding="utf-8").splitlines()]
+        self.assertFalse(any("remote-snapshotfixture" in arg for event in events
+                             if event["event"] == "child_start" for arg in event.get("argv", [])))
+        self.git("config", "--global", "protocol.file.allow", "never")
+        env = self.env.copy()
+        del env["GIT_ALLOW_PROTOCOL"]
+        self.assert_rejected("Clone failed", env=env)
 
     def test_reserved_source_manifest_file_and_directory(self):
         collision = MANIFEST.lower()

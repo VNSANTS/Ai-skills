@@ -5,7 +5,7 @@ if [[ ${OSTYPE:-} == msys* ]]; then export PATH="/usr/bin:$PATH"; fi
 
 fail() { printf 'Snapshot import: %s\n' "$*" >&2; exit 1; }
 
-[[ $# == 3 ]] || fail 'Expected source, branch and destination.'
+[[ $# == 3 || ( $# == 4 && $4 == --stage ) ]] || fail 'Expected source, branch, destination and optional --stage.'
 source_repo=$1
 branch=$2
 destination=${3%/}
@@ -27,8 +27,10 @@ unset GIT_DIR GIT_WORK_TREE GIT_COMMON_DIR GIT_INDEX_FILE GIT_OBJECT_DIRECTORY G
 root=$(git rev-parse --show-toplevel) || fail 'Run from inside the receiving Git clone.'
 target="$root/$destination"
 temporary=''
+index_lock=''
 created_dirs=()
 cleanup() {
+    if [[ -n $index_lock ]]; then rm -f -- "$index_lock"; fi
     if [[ -n $temporary ]]; then rm -rf -- "$temporary"; fi
     # Only remove empty parents created by this run, including after a failed clone.
     for ((i=${#created_dirs[@]}-1; i>=0; i--)); do
@@ -62,6 +64,7 @@ snapshot_git() {
 # existing protocol allowlist, or the user's per-protocol and default policies.
 allowed=''
 default_policy=$(git config --get protocol.allow || :)
+from_user=$(git -c "snapshot.fromUser=${GIT_PROTOCOL_FROM_USER-1}" config --bool --get snapshot.fromUser)
 for protocol in file git http https ssh; do
     if [[ -n ${GIT_ALLOW_PROTOCOL+x} ]]; then
         [[ :$GIT_ALLOW_PROTOCOL: == *":$protocol:"* ]] || continue
@@ -71,7 +74,7 @@ for protocol in file git http https ssh; do
         policy=$(git config --get "protocol.$protocol.allow" || printf '%s' "${default_policy:-$fallback}")
         case "${policy,,}" in
             always) ;;
-            user) case "${GIT_PROTOCOL_FROM_USER-1}" in 1|[Tt][Rr][Uu][Ee]|[Yy][Ee][Ss]|[Oo][Nn]) ;; *) continue ;; esac ;;
+            user) [[ $from_user == true ]] || continue ;;
             *) continue ;;
         esac
     fi
@@ -142,7 +145,6 @@ if [[ $actual != "$expected" ]]; then
 fi
 unset GIT_INDEX_FILE
 
-mv -- "$tree/.git" "$temporary/source.git"
 [[ ! -e $tree/$manifest && ! -L $tree/$manifest ]] || fail 'Manifest collision on the destination filesystem.'
 # Keep URL credentials and query parameters out of a manifest intended for Git.
 label=$source_repo
@@ -156,7 +158,49 @@ printf '# External source snapshot\n\nSource: %s\nBranch: %s\nSource commit: %s\
     "$label" "$branch" "$commit" "$count" > "$tree/$manifest"
 printf '\nIndependent copy of the tracked files from this commit.\n' >> "$tree/$manifest"
 
+if [[ ${4:-} == --stage ]]; then
+    [[ $(tree_git rev-parse --show-object-format) == "$(git -C "$root" rev-parse --show-object-format)" ]] ||
+        fail 'Exact staging requires matching Git object formats in source and destination.'
+
+    # Reuse the source index with its original modes, including on Windows.
+    manifest_id=$(tree_git hash-object -w --no-filters -- "$manifest")
+    tree_git update-index --add --cacheinfo "100644,$manifest_id,$manifest"
+    staged_tree=$(tree_git write-tree)
+    # Transfer only the snapshot tree/blobs to the receiving object database.
+    printf '%s\n' "$staged_tree" | tree_git pack-objects --revs --stdout |
+        snapshot_git -C "$root" index-pack --stdin > /dev/null
+
+    # Hold the receiving worktree's standard Git index lock until publication.
+    # Prepare the full new index separately, retaining unrelated staged entries.
+    index="$(git -C "$root" rev-parse --absolute-git-dir)/index"
+    if ! (set -o noclobber; : > "$index.lock") 2>/dev/null; then
+        fail 'The receiving Git index is locked. Retry the import when Git is idle.'
+    fi
+    index_lock="$index.lock"
+    candidate="$temporary/receiving.index"
+    if [[ -f $index ]]; then cp -p -- "$index" "$candidate"; fi
+    candidate_git() { GIT_INDEX_FILE="$candidate" snapshot_git -C "$root" "$@"; }
+    candidate_git ls-files --stage -z > "$temporary/original-index"
+    candidate_git read-tree --prefix="$destination/" "$staged_tree" ||
+        fail "The receiving index already contains conflicting entries at $destination."
+    candidate_git ls-files --stage -z -- . ":(top,exclude,icase,literal)$destination" > "$temporary/other-entries"
+    cmp -s -- "$temporary/original-index" "$temporary/other-entries" ||
+        fail "The receiving index already contains entries at $destination or a conflicting ancestor."
+    [[ $(candidate_git write-tree --prefix="$destination/") == "$staged_tree" ]] ||
+        fail 'The staged snapshot differs from the verified tree.'
+    cp -p -- "$candidate" "$index_lock"
+fi
+
+mv -- "$tree/.git" "$temporary/source.git"
 # Staging is on the destination volume. Never nest into or replace an existing directory.
+# Keep these short renames together when the caller interrupts the process.
+trap '' INT TERM
 mv -nT -- "$tree" "$target"
 [[ ! -d $tree ]] || fail "Destination already exists: $destination"
+if [[ -n $index_lock ]]; then
+    mv -fT -- "$index_lock" "$index" ||
+        fail "Files are complete. After resolving the index error, run: git read-tree --prefix=$destination/ $staged_tree"
+    index_lock=''
+    printf 'Staged verified Git tree %s at %s/.\n' "$staged_tree" "$destination"
+fi
 printf 'Copied %s tracked files into %s at source commit %s.\n' "$count" "$destination" "$commit"
