@@ -1,0 +1,51 @@
+{
+  "snapshot": "2026-11-25",
+  "note": "Metadados da API do GitHub. Reels como fonte de descoberta. Sem instalação ou teste funcional.",
+  "items": [
+    {
+      "repo": "Jakeschincariol/founder-skill",
+      "name": "founder-skill",
+      "category": "Produto",
+      "type": "skill-collection",
+      "url": "https://github.com/Jakeschincariol/founder-skill",
+      "stars": 4917,
+      "license": "MIT",
+      "pushed_at": "2026-10-07T01:07:17Z",
+      "archived": false,
+      "description": "Organiza hipóteses de negócio, preço e ponto de equilíbrio. Valide as hipóteses com clientes reais.",
+      "status": "metadata-verified-only",
+      "installed": false,
+      "discovery_url": "https://www.instagram.com/coraltechh/reel/Df7AqGruas0/"
+    },
+    {
+      "repo": "elvarofficial/teardown",
+      "name": "teardown",
+      "category": "Ensino",
+      "type": "skill",
+      "url": "https://github.com/elvarofficial/teardown",
+      "stars": 4162,
+      "license": "MIT",
+      "pushed_at": "2026-11-25T11:39:22Z",
+      "archived": false,
+      "description": "Cria visualizações interativas de mecanismos em 3D e permite gerar vídeos explicativos.",
+      "status": "metadata-verified-only",
+      "installed": false,
+      "discovery_url": "https://www.instagram.com/coraltechh/reel/DfzysLjqk5G/"
+    },
+    {
+      "repo": "artemnovitckii/claude-animation-skills",
+      "name": "claude-animation-skills",
+      "category": "Vídeo",
+      "type": "skill-collection",
+      "url": "https://github.com/artemnovitckii/claude-animation-skills",
+      "stars": 1245,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-11-17T10:15:03Z",
+      "archived": false,
+      "description": "Coleção para criar animações e explicações visuais curtas com renderização local. Confira a licença integral e os requisitos do ambiente.",
+      "status": "metadata-verified-only",
+      "installed": false,
+      "discovery_url": "https://www.instagram.com/coraltechh/reel/DgKTuYKyuQt/"
+    }
+  ]
+}

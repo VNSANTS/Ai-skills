@@ -2,7 +2,7 @@
 
 > **Snapshots do GitHub de 9 e 25 de novembro de 2026**. Estrelas, licença SPDX e atividade são metadados da API; **não** significam auditoria de segurança, licença aprovada, compatibilidade ou instalação. Nenhum código externo foi copiado ou executado.
 
-**137 repositórios com metadados confirmados**, 8 referências pendentes de confirmação e **12 catálogos JSON**. Veja também [42 referências antigas](docs/HISTORICAL_RESOURCES.md), [pendências](docs/UNRESOLVED.md) e [política de adoção](docs/ADOPTION_POLICY.md).
+**140 repositórios com metadados confirmados**, 8 referências pendentes de confirmação e **13 catálogos JSON**. Veja também [42 referências antigas](docs/HISTORICAL_RESOURCES.md), [pendências](docs/UNRESOLVED.md) e [política de adoção](docs/ADOPTION_POLICY.md).
 
 ## Produtividade de desenvolvimento
 
@@ -31,6 +31,18 @@ Seleção de 25/11/2026 para diminuir o trabalho repetitivo na busca, revisão, 
 - **Sessões longas com IA:** comece por filtros de arquivos e campos. Use Repomix quando precisar montar um pacote de arquivos selecionados e Context Mode quando o problema for saída longa do terminal ou das ferramentas. Compare com [RTK](https://github.com/rtk-ai/rtk) para compactação da saída de comandos e use a [skill de eficiência](skills/token-efficiency/SKILL.md) para medir o efeito com a mesma tarefa.
 
 O catálogo registra a licença detectada pelo GitHub. `NOASSERTION` indica que a API não determinou um identificador SPDX. A avaliação foi documental, sem benchmark de desempenho ou instalação.
+
+## Skills descobertas no Instagram
+
+Achados no perfil [Coral Tech](https://www.instagram.com/coraltechh/), com identidade e metadados conferidos na API do GitHub em 25/11/2026. [Metadados JSON](catalog/instagram-skills.json).
+
+| Projeto | Uso | Reel |
+|---|---|---|
+| [founder-skill](https://github.com/Jakeschincariol/founder-skill) | Organiza hipóteses de negócio, preço e ponto de equilíbrio. Valide as hipóteses com clientes reais. | [Demonstração](https://www.instagram.com/coraltechh/reel/Df7AqGruas0/) |
+| [teardown](https://github.com/elvarofficial/teardown) | Cria visualizações interativas de mecanismos em 3D e permite gerar vídeos explicativos. | [Demonstração](https://www.instagram.com/coraltechh/reel/DfzysLjqk5G/) |
+| [claude-animation-skills](https://github.com/artemnovitckii/claude-animation-skills) | Coleção para criar animações e explicações visuais curtas com renderização local. Confira a licença integral e os requisitos do ambiente. | [Demonstração](https://www.instagram.com/coraltechh/reel/DgKTuYKyuQt/) |
+
+Dois destaques dos Reels já estavam no catálogo: [Superpowers](https://github.com/obra/superpowers) para planejamento e testes de código e [Unslop](https://github.com/heydamir/unslop) para revisão visual de interfaces. A licença `NOASSERTION` é o valor retornado pela API. As demos são referências de descoberta e a execução segue sem teste neste catálogo.
 
 ## ★ Principais projetos por popularidade
 
