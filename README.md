@@ -2,7 +2,7 @@
 
 Uma biblioteca organizada de **Skills, ferramentas, agentes, servidores MCP, frameworks, hooks, prompts, SDKs, design, segurança, marketing, finanças e eficiência de tokens**.
 
-**Catálogo atualizado em 25/11/2026:** **140 repositórios com metadados confirmados na API do GitHub**, **8 candidatos ainda não confirmados**, **13 arquivos JSON catalogados**, **16 Skills autorais/reconstruídas**, quatro fichas de ferramentas e 42 referências recuperadas de pedidos antigos.
+**Catálogo atualizado em 25/11/2026:** **145 repositórios com metadados confirmados na API do GitHub**, **8 candidatos ainda não confirmados**, **14 arquivos JSON catalogados**, **16 Skills autorais/reconstruídas**, quatro fichas de ferramentas e 42 referências recuperadas de pedidos antigos.
 
 > **Catalogado ≠ instalado ≠ auditado.** Popularidade e campo de licença do GitHub não garantem segurança. Não foi copiado ou executado código de terceiros nem foram configurados hooks, MCPs ou modelos pagos. O orçamento adicional permitido é **R$ 0**.
 
@@ -13,6 +13,7 @@ Uma biblioteca organizada de **Skills, ferramentas, agentes, servidores MCP, fra
 | Descobrir projetos por estrelas e categoria | [INDEX.md](INDEX.md) |
 | Acelerar busca, revisão, CI e uso de contexto | [Produtividade de desenvolvimento](INDEX.md#produtividade-de-desenvolvimento) |
 | Ver skills encontradas em Reels | [Skills descobertas no Instagram](INDEX.md#skills-descobertas-no-instagram) |
+| Ver skills encontradas no YouTube | [Demonstrações no YouTube](INDEX.md#skills-e-ferramentas-descobertas-no-youtube) |
 | Acessar dados estruturados para IA/scripts | [catalog/](catalog/) — JSONs por área |
 | Usar uma Skill própria | [skills/](skills/) |
 | Ver ferramentas pedidas (ECC, Strix, Agent Desktop, Prompt Motion) | [tools/](tools/) |
@@ -44,7 +45,7 @@ Todas ficam em `skills/<nome>/SKILL.md`. Não há garantia de que um agente as c
 
 ## Limites transparentes
 
-As 140 entradas têm **metadados oficiais do GitHub conferidos**, não 140 auditorias de software. As 8 referências não confirmadas permanecem registradas para triagem. Este projeto não gerencia configurações privadas do ChatGPT, instalação no Codex ou deploys de terceiros. Consulte o [status técnico](docs/STATUS.md).
+As 145 entradas têm **metadados oficiais do GitHub conferidos**, não 145 auditorias de software. As 8 referências não confirmadas permanecem registradas para triagem. Este projeto não gerencia configurações privadas do ChatGPT, instalação no Codex ou deploys de terceiros. Consulte o [status técnico](docs/STATUS.md).
 
 ## Repositórios externos e backups
 

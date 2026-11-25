@@ -2,7 +2,7 @@
 
 > **Snapshots do GitHub de 9 e 25 de novembro de 2026**. Estrelas, licença SPDX e atividade são metadados da API; **não** significam auditoria de segurança, licença aprovada, compatibilidade ou instalação. Nenhum código externo foi copiado ou executado.
 
-**140 repositórios com metadados confirmados**, 8 referências pendentes de confirmação e **13 catálogos JSON**. Veja também [42 referências antigas](docs/HISTORICAL_RESOURCES.md), [pendências](docs/UNRESOLVED.md) e [política de adoção](docs/ADOPTION_POLICY.md).
+**145 repositórios com metadados confirmados**, 8 referências pendentes de confirmação e **14 catálogos JSON**. Veja também [42 referências antigas](docs/HISTORICAL_RESOURCES.md), [pendências](docs/UNRESOLVED.md) e [política de adoção](docs/ADOPTION_POLICY.md).
 
 ## Produtividade de desenvolvimento
 
@@ -43,6 +43,20 @@ Achados no perfil [Coral Tech](https://www.instagram.com/coraltechh/), com ident
 | [claude-animation-skills](https://github.com/artemnovitckii/claude-animation-skills) | Coleção para criar animações e explicações visuais curtas com renderização local. Confira a licença integral e os requisitos do ambiente. | [Demonstração](https://www.instagram.com/coraltechh/reel/DgKTuYKyuQt/) |
 
 Dois destaques dos Reels já estavam no catálogo: [Superpowers](https://github.com/obra/superpowers) para planejamento e testes de código e [Unslop](https://github.com/heydamir/unslop) para revisão visual de interfaces. A licença `NOASSERTION` é o valor retornado pela API. As demos são referências de descoberta e a execução segue sem teste neste catálogo.
+
+## Skills e ferramentas descobertas no YouTube
+
+Seleção a partir de demonstrações de [Matt Wolfe](https://www.youtube.com/watch?v=STH929HARLo) e [Y Combinator](https://www.youtube.com/watch?v=wkv2ifxPpF8), com metadados conferidos na API do GitHub em 25/11/2026. [Metadados JSON](catalog/youtube-skills.json).
+
+| Projeto | Uso | Demonstração |
+|---|---|---|
+| [gstack](https://github.com/garrytan/gstack) | Organiza planejamento, revisão e QA em fluxos reutilizáveis. Para o Nexus, comece avaliando a revisão e o QA sem habilitar publicação automática. | [YouTube](https://www.youtube.com/watch?v=wkv2ifxPpF8) |
+| [Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) | Cria um mapa navegável do código para entender rotas, dependências e módulos antes de refatorar. | [YouTube](https://www.youtube.com/watch?v=STH929HARLo&t=854s) |
+| [last30days-skill](https://github.com/mvanhorn/last30days-skill) | Resume discussões recentes de várias fontes. Confira cobertura, credenciais e custo de cada integração. | [YouTube](https://www.youtube.com/watch?v=STH929HARLo&t=1119s) |
+| [stop-slop](https://github.com/hardikpandya/stop-slop) | Revisa prosa para remover construções repetitivas e clichês. Confira o resultado no idioma da publicação. | [YouTube](https://www.youtube.com/watch?v=STH929HARLo&t=494s) |
+| [hyperframes](https://github.com/heygen-com/hyperframes) | Renderiza composições HTML em MP4, como demos de produto com capturas do app. | [YouTube](https://www.youtube.com/watch?v=STH929HARLo&t=1486s) |
+
+Prioridade para desenvolvimento: GStack para estruturar revisão e QA, e Understand Anything para navegar no código. Compatibilidade, permissões e impacto na produtividade ainda precisam de teste no ambiente escolhido.
 
 ## ★ Principais projetos por popularidade
 

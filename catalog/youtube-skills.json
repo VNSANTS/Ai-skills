@@ -1,0 +1,81 @@
+{
+  "snapshot": "2026-11-25",
+  "note": "Metadados da API do GitHub. Vídeos são fontes de descoberta. Sem instalação ou teste funcional.",
+  "items": [
+    {
+      "repo": "garrytan/gstack",
+      "name": "gstack",
+      "category": "Engenharia",
+      "type": "skill-collection",
+      "url": "https://github.com/garrytan/gstack",
+      "stars": 142624,
+      "license": "MIT",
+      "pushed_at": "2026-11-25T15:02:08Z",
+      "archived": false,
+      "description": "Organiza planejamento, revisão e QA em fluxos reutilizáveis. Para o Nexus, comece avaliando a revisão e o QA sem habilitar publicação automática.",
+      "status": "metadata-verified-only",
+      "installed": false,
+      "discovery_url": "https://www.youtube.com/watch?v=wkv2ifxPpF8"
+    },
+    {
+      "repo": "Egonex-AI/Understand-Anything",
+      "name": "Understand-Anything",
+      "category": "Engenharia",
+      "type": "skill-collection",
+      "url": "https://github.com/Egonex-AI/Understand-Anything",
+      "stars": 94328,
+      "license": "MIT",
+      "pushed_at": "2026-11-25T06:30:57Z",
+      "archived": false,
+      "description": "Cria um mapa navegável do código para entender rotas, dependências e módulos antes de refatorar.",
+      "status": "metadata-verified-only",
+      "installed": false,
+      "discovery_url": "https://www.youtube.com/watch?v=STH929HARLo&t=854s"
+    },
+    {
+      "repo": "mvanhorn/last30days-skill",
+      "name": "last30days-skill",
+      "category": "Pesquisa",
+      "type": "skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "stars": 74843,
+      "license": "MIT",
+      "pushed_at": "2026-11-25T06:31:14Z",
+      "archived": false,
+      "description": "Resume discussões recentes de várias fontes. Confira cobertura, credenciais e custo de cada integração.",
+      "status": "metadata-verified-only",
+      "installed": false,
+      "discovery_url": "https://www.youtube.com/watch?v=STH929HARLo&t=1119s"
+    },
+    {
+      "repo": "hardikpandya/stop-slop",
+      "name": "stop-slop",
+      "category": "Escrita",
+      "type": "skill",
+      "url": "https://github.com/hardikpandya/stop-slop",
+      "stars": 19200,
+      "license": "MIT",
+      "pushed_at": "2026-03-17T18:50:39Z",
+      "archived": false,
+      "description": "Revisa prosa para remover construções repetitivas e clichês. Confira o resultado no idioma da publicação.",
+      "status": "metadata-verified-only",
+      "installed": false,
+      "discovery_url": "https://www.youtube.com/watch?v=STH929HARLo&t=494s"
+    },
+    {
+      "repo": "heygen-com/hyperframes",
+      "name": "hyperframes",
+      "category": "Vídeo",
+      "type": "dev-tool",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "stars": 89966,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-11-25T15:06:33Z",
+      "archived": false,
+      "description": "Renderiza composições HTML em MP4, como demos de produto com capturas do app.",
+      "status": "metadata-verified-only",
+      "installed": false,
+      "discovery_url": "https://www.youtube.com/watch?v=STH929HARLo&t=1486s"
+    }
+  ]
+}
