@@ -17,6 +17,14 @@ Use a coluna de tarefa para escolher a primeira skill. Consulte a documentação
 | Conteúdo | [content-production](content-production/SKILL.md) | Defina público, canal, objetivo, formato e ação esperada. Separe fatos aprovados de pontos que pedem confirmação. |
 | Qualidade | [test-design](test-design/SKILL.md) | Mapeie cada requisito a um resultado observável. Escolha o nível mais simples que cubra o risco e preserve testes existentes relevantes. |
 
+## Fluxos para decisões e entregas
+
+| Skill | Use quando precisar… |
+|---|---|
+| [decision-record](decision-record/SKILL.md) | Escolher entre opções com restrições, custos e evidências diferentes |
+| [deliverable-review](deliverable-review/SKILL.md) | Conferir se a versão final atende ao pedido e pode ser usada |
+| [staged-rollout](staged-rollout/SKILL.md) | Publicar uma mudança por etapas com critérios de avanço e recuperação |
+
 ## Skills já disponíveis
 
 | Área | Skills |

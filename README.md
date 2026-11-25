@@ -2,7 +2,7 @@
 
 Uma biblioteca organizada de **Skills, ferramentas, agentes, servidores MCP, frameworks, hooks, prompts, SDKs, design, segurança, marketing, finanças e eficiência de tokens**.
 
-**Catálogo atualizado em 25/11/2026:** **145 repositórios com metadados confirmados na API do GitHub**, **8 candidatos ainda não confirmados**, **14 arquivos JSON catalogados**, **28 Skills autorais/reconstruídas**, quatro fichas de ferramentas e 42 referências recuperadas de pedidos antigos.
+**Catálogo atualizado em 25/11/2026:** **145 repositórios com metadados confirmados na API do GitHub**, **8 candidatos ainda não confirmados**, **14 arquivos JSON catalogados**, **31 Skills autorais/reconstruídas**, quatro fichas de ferramentas e 42 referências recuperadas de pedidos antigos.
 
 > **Catalogado ≠ instalado ≠ auditado.** Popularidade e campo de licença do GitHub não garantem segurança. Não foi copiado ou executado código de terceiros nem foram configurados hooks, MCPs ou modelos pagos. O orçamento adicional permitido é **R$ 0**.
 
