@@ -18,8 +18,9 @@ description: Resume long or interrupted coding tasks from a checkpoint with boun
 
 1. Registre o resultado esperado e o bloqueio mais recente. Compare a revisão atual, o diff local e a revisão do checkpoint para detectar trabalho posterior ou alterações do usuário.
 2. Para build, PR ou deploy interrompido, consulte primeiro o estado e a revisão da execução existente. Retome a etapa pendente e reaproveite os resultados que ainda correspondem à revisão e ao ambiente.
-3. Se o próximo comando falhar, registre a mensagem relevante, o que já foi descartado e a evidência que falta. Deixe um checkpoint pequeno o suficiente para orientar a próxima sessão em uma única leitura.
+3. Para dados e aprovações externos ao Git, inclua no checkpoint a versão ou hash das entradas e a referência, o escopo e a vigência da autorização. Confira esses dados mesmo com o mesmo commit. Refaça as verificações que dependiam do que mudou.
+4. Se o próximo comando falhar, registre a mensagem relevante, o que já foi descartado e a evidência que falta. Deixe um checkpoint pequeno o suficiente para orientar a próxima sessão em uma única leitura.
 
-Use [token-efficiency](../token-efficiency/SKILL.md) para medir consumo ou otimizar o contexto de um fluxo estável.
+Se precisar medir consumo e a skill `token-efficiency` estiver disponível, consulte-a. Compare a mesma tarefa com o mesmo critério de aceite. Registre as métricas que o ambiente realmente expõe.
 
-**Provenance:** reconstructed from the user's earlier Nexus Finance workflow request. This is not asserted to be a byte-identical copy of the original project Skill. **Status:** untested in this repository.
+Origem: fluxo reconstruído a partir de um pedido anterior do Nexus Finance. A retomada foi exercitada com entradas e autorizações sintéticas.

@@ -1,24 +1,27 @@
-# Status técnico — 09/11/2026
+# Verificação de 25 de novembro de 2026
 
-## Concluído nesta rodada
-- 11 catálogos JSON, **132 registros**, sendo **124 com metadados oficiais** e **8 referências sem identidade/metadados suficientes**.
-- Índice navegável por categorias e ranking de estrelas em `INDEX.md`.
-- Correção de antigos aliases e inclusão de projetos de alta relevância.
-- Documentação de adoção segura, custo R$0, MCP/hook, prompt de descoberta e regras `AGENTS.md`.
-- Duas Skills de curadoria/segurança, além das 11 anteriores.
-- Validador Python offline + workflow GitHub Actions (execução/resultado devem ser confirmados no Actions, não presumidos).
+As 34 skills próprias foram aplicadas a exercícios com entradas sintéticas. A tabela registra o que foi observado e onde a cobertura termina.
 
-## O que os números significam
-- 124 = existência e campos de metadados consultados, **não 124 repositórios auditados ou instalados**.
-- Estrelas e `pushed_at` são snapshot e podem mudar.
-- Campo SPDX pode ser impreciso ou omitir componentes; revisão de LICENSE ainda é necessária.
-- O custo em software não prova custo zero de APIs ou infraestrutura.
-- As 13 Skills próprias são arquivos descritivos; não houve benchmark de economia de tokens ou teste de compatibilidade completo.
+| Área | Evidência |
+|---|---|
+| Orquestração, dados e documentos | Um coordenador integrou dois CSVs e um agente independente refez o cálculo em centavos. Das dez linhas, seis eventos somaram R$ 20,10 líquidos, duas linhas eram cópias e duas continham valores conflitantes. O resumo distinguiu mês sem dados de mês com valor zero. Em outro caso, uma decisão sobre a data de competência mudou a distribuição mensal. O texto revisado preservou os trechos exigidos. |
+| Engenharia | Duas conexões SQLite disputaram a última unidade. Uma falha intermediária preservou o estoque e a repetição do pedido produziu um único efeito. Um grafo Git com mudanças na base distinguiu um check antigo do resultado da integração. Também foram exercitados a ordem dos testes, estados assíncronos obsoletos, 32 casos de acesso a dados e fontes em conflito em uma busca. |
+| Android e PWA | Um teste de JavaScript em Node simulou os eventos do service worker e o cache da aba antiga. Uma comparação de hashes detectou um pacote com recurso desatualizado. Assinatura Android, navegador móvel, OAuth real, PostgreSQL/Supabase e execução em Flutter precisam de validação no produto de destino. |
+| Planejamento, pesquisa e operação | Um piloto sintético revelou um registro ausente. Amostras com contagens iguais também revelaram ID duplicado, substituição de ID e horário alterado. A autorização para operar mudou durante o exercício. A retomada conferiu sua versão, o escopo e as fontes antes de prosseguir. |
+| Design, educação e comunicação | Uma oficina fictícia gerou um questionário, uma folha A4, quatro telas de projeção e uma faixa. Foram exercitados os caminhos de acerto e erro e a leitura de valores em português. Projeção em sala e aprendizagem de um público real exigem observação no local. |
+| Automação e desenho de testes | O importador trabalha sobre um repositório Git temporário. A suíte cobre seleção de branch, comparação dos bytes, conflito no destino, falha e repetição, duas importações simultâneas e entradas cujo conteúdo completo não está no commit. |
 
-## Limitações e próximos gates
-1. Inspecionar realmente as licenças e arquivos executáveis dos **subconjuntos escolhidos** para instalação.
-2. Verificar fornecedores, forks e nomes pendentes em `docs/UNRESOLVED.md`.
-3. Executar e acompanhar a validação no Actions.
-4. Revisar as 31 fontes privadas linha a linha antes de afirmar auditoria integral ou divulgar conteúdo.
-5. Medir economia real de tokens de RTK e Headroom em tarefas equivalentes, com ferramentas efetivamente instaladas e autorizadas.
-6. Não habilitar custos, produção, credenciais ou monitoramento externo sem autorização.
+O [índice](../INDEX.md) contém os metadados consultados no GitHub para 147 projetos. Quatro nomes históricos foram reconciliados pelo ID estável e três caminhos antigos responderam HTTP 404. Os projetos de terceiros têm avaliação documental. As [fontes do Instagram](../INDEX.md#skills-descobertas-no-instagram) e os [vídeos do YouTube](../INDEX.md#skills-e-ferramentas-descobertas-no-youtube) permitem conferir as demonstrações. O custo em tokens de modelos e a economia em projetos de produção não foram medidos.
+
+## Reproduzir os testes
+
+Na raiz do repositório, use Python 3.11 ou posterior e Git. O catálogo pode ser validado só com a biblioteca padrão. Para validar Markdown e YAML, instale as dependências no ambiente Python escolhido.
+
+```console
+python scripts/validate_catalog.py
+python -m pip install -r scripts/requirements-validation.txt
+python scripts/validate_library.py
+python -m unittest discover -s tests -v
+```
+
+O validador verifica metadados, IDs e aliases, arquivos de skill e sua presença no índice, links locais, âncoras Markdown e projetos anunciados no índice externo. Os testes do importador criam repositórios locais descartáveis. No Windows, eles chamam a interface PowerShell com Git for Windows instalado. Os resultados por revisão ficam no [GitHub Actions](https://github.com/VNSANTS/Ai-skills/actions/workflows/catalog-validation.yml). O procedimento e os limites da cópia de arquivos externos estão no [guia de importação](EXTERNAL_REPOSITORIES.md).

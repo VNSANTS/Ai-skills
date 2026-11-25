@@ -2,9 +2,9 @@
 
 Uma biblioteca organizada de **Skills, ferramentas, agentes, servidores MCP, frameworks, hooks, prompts, SDKs, design, segurança, marketing, finanças e eficiência de tokens**.
 
-**Catálogo atualizado em 25/11/2026:** **145 repositórios com metadados confirmados na API do GitHub**, **8 candidatos ainda não confirmados**, **14 arquivos JSON catalogados**, **34 Skills autorais/reconstruídas**, quatro fichas de ferramentas e 42 referências recuperadas de pedidos antigos.
+Em 25/11/2026, a biblioteca reúne **34 skills próprias** e **147 repositórios com metadados confirmados** em 14 catálogos. Três endereços antigos continuam sem confirmação. O histórico preserva quatro fichas de ferramentas e 42 referências de pedidos anteriores.
 
-> **Catalogado ≠ instalado ≠ auditado.** Popularidade e campo de licença do GitHub não garantem segurança. Não foi copiado ou executado código de terceiros nem foram configurados hooks, MCPs ou modelos pagos. O orçamento adicional permitido é **R$ 0**.
+> Cada entrada externa descreve origem, atividade e licença informada pelo GitHub. A biblioteca funciona com orçamento adicional de **R$ 0**. As verificações executadas estão no [status técnico](docs/STATUS.md).
 
 ## Comece por aqui
 
@@ -24,22 +24,16 @@ Uma biblioteca organizada de **Skills, ferramentas, agentes, servidores MCP, fra
 | Pesquisar novas ferramentas com IA | [prompts/curate-and-verify.md](prompts/curate-and-verify.md) |
 | Entender integrações MCP e hooks | [mcp/](mcp/), [hooks/](hooks/) |
 | Adotar regras em projeto próprio | [examples/AGENTS.project.md](examples/AGENTS.project.md) |
-| Validar dados localmente | `python scripts/validate_catalog.py` |
+| Reproduzir os testes do repositório | [Comandos de validação](docs/STATUS.md#reproduzir-os-testes) |
 | Rever o legado dos 31 Markdown | [docs/ZIP_REVIEW.md](docs/ZIP_REVIEW.md) |
 
 ## Execute uma tarefa de ponta a ponta
 
-Use [task-orchestration](skills/task-orchestration/SKILL.md) e descreva o resultado que quer. Ela consulta [task-clarification](skills/task-clarification/SKILL.md) e [model-agent-routing](skills/model-agent-routing/SKILL.md) para fechar o escopo, escolher os recursos disponíveis e executar um roteiro verificável.
+Comece pela [task-orchestration](skills/task-orchestration/SKILL.md). Dê a tarefa e diga como reconhecer o resultado. A skill consulta o projeto, esclarece as decisões que faltam, escolhe os recursos disponíveis para cada etapa, executa e confere a entrega. Pode trabalhar sozinha ou chamar as auxiliares [task-clarification](skills/task-clarification/SKILL.md) e [model-agent-routing](skills/model-agent-routing/SKILL.md).
 
-## Coleções de Skills autorais
+> Use a task-orchestration para transformar os CSVs de inscrições deste projeto em um resumo para a coordenação. Entregue a contagem por oficina, identifique divergências e confira os totais com os arquivos de origem.
 
-Encontre fluxos reutilizáveis de planejamento, pesquisa, dados, documentação, apresentações, qualidade, acessibilidade, automação, operações e conteúdo no [índice de skills](skills/README.md).
-
-Arquitetura de backend; Flutter; UX/UI; engenharia de agentes; educação financeira; design de aprendizagem; gamificação ética; estratégia de produto; eficiência de tokens; fluxo econômico de tarefas; banners panorâmicos para datashow; curadoria de repositórios; adoção segura de ferramentas.
-
-A coleção também inclui [revisão de PRs no GitHub](skills/github-pr-review/SKILL.md), [release Android e PWA](skills/android-pwa-release/SKILL.md) e [revisão de migrações Supabase](skills/supabase-migration-review/SKILL.md).
-
-Todas ficam em `skills/<nome>/SKILL.md`. Não há garantia de que um agente as carregará automaticamente: é necessário apontar o agente para esse repositório ou copiar a Skill após avaliação.
+Para usá-la num projeto seu, siga o [guia de uso local](install/README.md#usar-as-skills-próprias-em-um-projeto). Para escolher outra especialidade, consulte as [skills por tarefa](skills/README.md).
 
 ## Princípios
 
@@ -51,7 +45,7 @@ Todas ficam em `skills/<nome>/SKILL.md`. Não há garantia de que um agente as c
 
 ## Limites transparentes
 
-As 145 entradas têm **metadados oficiais do GitHub conferidos**, não 145 auditorias de software. As 8 referências não confirmadas permanecem registradas para triagem. Este projeto não gerencia configurações privadas do ChatGPT, instalação no Codex ou deploys de terceiros. Consulte o [status técnico](docs/STATUS.md).
+O catálogo registra identidades e metadados oficiais. Compatibilidade e execução dependem do ambiente em que cada ferramenta for adotada. Veja a [cobertura dos testes das skills próprias](docs/STATUS.md) e os [endereços pendentes](docs/UNRESOLVED.md).
 
 ## Repositórios externos e backups
 

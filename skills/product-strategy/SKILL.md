@@ -21,9 +21,11 @@ description: Turn product problems into testable opportunities, priorities, road
 3. Especifique o menor piloto, sua população, janela de observação, indicador principal e condição para avançar, ajustar ou encerrar.
 4. Documente responsável, prazo e resultado. Atualize o roadmap com a decisão tomada e guarde as hipóteses que ficaram abertas.
 
+Para um piloto pequeno, anote os números absolutos junto da porcentagem. Defina quem entra no denominador, qual tentativa conta e o que fazer se a presença ficar abaixo do previsto. Vincule cada sinal de dano ou exclusão a uma decisão concreta, inclusive quando a meta principal for atingida.
+
 ## Source and status
 - Adapted from user-provided original Markdown documents: 06_PRODUCT_PARTE1.md, 06_PRODUCT_PARTE2.md, 06_PRODUCT_PARTE3.md, 06_PRODUCT_PARTE4.md, 06_PRODUCT_PARTE5.md.
 - This is a **reviewed derivative**, not a verbatim copy of internal/confidential source material.
-- **Status:** draft; not functionally tested in Codex/Claude/ChatGPT.
+- **Status:** rascunho. Identifique as decisões propostas e os resultados efetivamente observados no piloto.
 - Verify tools, versions and official docs in the target environment before execution.
 - No third-party code or dependency is bundled.

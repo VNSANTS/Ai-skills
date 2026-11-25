@@ -23,3 +23,5 @@ Exemplo: se uma RPC move estoque, confirme que o saldo e o lançamento mudam jun
 | Identidade sem sessão | Recebe somente o acesso público explicitamente previsto |
 
 Execute a matriz usando o caminho de autenticação do aplicativo. Use privilégios administrativos para preparar e conferir os dados de teste, mantendo os papéis reais ao executar as operações avaliadas.
+
+Registre o status, as linhas visíveis ou alteradas e o estado após a chamada. Uma resposta com sucesso e zero linhas pode ser a negação esperada pelo contrato. Se o campo de tenant aparece na atualização, tente mover um registro próprio para outro tenant e confira a autorização e os dados na origem e no destino.

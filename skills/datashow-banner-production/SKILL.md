@@ -19,4 +19,6 @@ description: Compose and export panoramic banners for church projectors and data
 3. Visualize a peça inteira reduzida e simule o recorte nas bordas. Se o título perder leitura, ajuste contraste, espessura ou fundo antes da exportação.
 4. Confira as dimensões no arquivo exportado e, se houver acesso ao projetor, teste legibilidade e recorte na tela. Registre qual conferência foi feita.
 
-**Status:** original workflow adapted from user preferences; not execution-tested here.
+Registre quanto foi recortado em cada borda e confira se o texto obrigatório permanece inteiro na imagem resultante. Para uma tela de outra proporção, simule o modo de encaixe que será usado. Ao entregar a peça, indique o modo de exibição e transcreva a mensagem para leitura em voz alta.
+
+**Status:** fluxo derivado de preferências do usuário. Identifique separadamente a conferência do arquivo, a simulação de exibição e o ensaio com o projetor.

@@ -5,18 +5,9 @@ description: Clarify objectives, scope, deliverables, and acceptance criteria be
 
 # Definir a tarefa
 
-1. Leia o pedido, correções posteriores, arquivos fornecidos e regras do projeto. Descubra o estado atual com leituras focalizadas e use a fonte mais recente e autorizada.
-2. Registre objetivo, contexto relevante, formato e destino da entrega, critérios observáveis, restrições e permissões conhecidas. Marque o que é explícito, inferido ou desconhecido. Separe objetivo de abordagem sugerida.
-3. Trate decisões rotineiras e reversíveis como premissas e prossiga. Se a escolha mudar substancialmente a entrega, envolver custo ou exigir autorização, faça a menor pergunta que desbloqueia o trabalho. Dê opções concretas, consequência e recomendação quando útil. Continue o trabalho independente enquanto aguarda.
-4. Preserve o pedido original ao incorporar respostas. Confirme que cada entrega tem um critério verificável. Atualize o roteiro apenas onde a resposta mudar o trabalho.
+1. Leia o pedido, correções, regras e fontes indicadas. Extraia o objetivo, o destinatário, o formato e o destino da entrega. Registre um critério observável por entrega e os limites de prazo, custo, privacidade ou autorização que realmente se aplicam.
+2. Resolva dúvidas pelas fontes autorizadas. Distinga requisitos, preferências, premissas reversíveis e lacunas. Se uma escolha rotineira permite prosseguir, adote-a e informe-a quando afetar a interpretação do resultado.
+3. Se duas interpretações ainda levarem a resultados materialmente diferentes, mostre o efeito concreto e faça a menor pergunta que as distingue. Por exemplo, quando as datas de venda e de liquidação levam a meses diferentes, pergunte qual determina o mês do relatório. Avance nas verificações em comum enquanto aguarda. Mantenha a parte dependente em aberto até receber a resposta.
+4. Ao receber uma decisão, preserve os outros requisitos e atualize somente entregas e verificações afetadas. Se foi pedida uma entrevista inicial, conduza-a antes de executar.
 
-## Brief para execução
-
-- Objetivo e destinatário.
-- Entregas e critérios de aceite.
-- Fontes, ambiente, estado atual e dependências.
-- Prazo, orçamento, privacidade e autorizações.
-- Premissas reversíveis e perguntas bloqueantes.
-- Estado: pronto, parcialmente pronto ou aguardando decisão.
-
-Para uma tarefa clara e curta, use esse brief mentalmente e execute. Se o usuário pedir uma entrevista inicial, faça perguntas pertinentes mesmo com uma hipótese disponível. Na orquestração, passe o brief para [model-agent-routing](../model-agent-routing/SKILL.md) e [task-orchestration](../task-orchestration/SKILL.md).
+Quando outra skill solicitar a clarificação, devolva ao chamador o objetivo, os critérios, as premissas e a decisão pendente, se houver. O chamador retoma do ponto em que parou. Conclua aqui a clarificação, sem abrir outro fluxo de orquestração. Em uso direto, entregue o brief se ele foi pedido ou prossiga com a tarefa autorizada. Para um pedido claro e curto, basta manter o brief em contexto.

@@ -18,11 +18,12 @@ Example: for `POST /orders`, verify that a repeated request does not duplicate a
 ## Concorrência e recuperação
 
 - Para cada invariante, identifique onde ela é garantida, como chave única, condição de atualização ou transação. Confira se a garantia continua válida com duas requisições simultâneas.
+- Defina o escopo da chave de idempotência, por exemplo, tenant e operação. Teste a mesma chave com dados equivalentes e depois com dados divergentes, como outra quantidade. Confira a resposta prevista pelo contrato para cada caso e conte os registros e efeitos produzidos.
 - Se a transação local depende de serviço externo, defina qual estado fica gravado quando o serviço falha, como retomar e como reconhecer um efeito externo já confirmado.
 
 ## Source and status
 - Adapted from user-provided original Markdown documents: 01_BACKEND_CORE.md, 02_BACKEND_SECURITY.md, 03_BACKEND_OPS.md.
 - This is a **reviewed derivative**, not a verbatim copy of internal/confidential source material.
-- **Status:** draft; not functionally tested in Codex/Claude/ChatGPT.
+- Rascunho aplicado explicitamente no Codex a transações SQLite concorrentes e a um serviço externo simulado. A integração com o backend de destino requer teste próprio.
 - Verify tools, versions and official docs in the target environment before execution.
 - No third-party code or dependency is bundled.

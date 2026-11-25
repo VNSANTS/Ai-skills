@@ -17,8 +17,9 @@ For each proposed integration:
 
 ## Evidência para a decisão
 
+- Compare o alcance e a duração das permissões solicitadas com a autorização vigente. Se a ferramenta exigir um hook global persistente para uma tarefa local, registre a incompatibilidade e confira se existe um modo local sob demanda.
 - Para o artefato ou versão escolhida, liste processos iniciados, gatilhos, destinos de rede, dados acessados, arquivos escritos e mecanismo de desativação. Inclua scripts de instalação e dependências que executam código.
 - Teste com permissões mínimas num ambiente descartável. Exerça inicialização, operação comum, falha com permissão negada e remoção. Compare arquivos e processos antes e depois.
-- Registre versão ou hash, escopo autorizado, comandos executados e pendências. Quando uma dependência muda, refaça as verificações afetadas.
+- Registre versão ou hash, escopo autorizado, comandos executados e pendências. Identifique quais efeitos foram declarados na documentação e quais foram observados em execução. Quando uma dependência muda, refaça as verificações afetadas.
 
 No installations are performed by this Skill itself.

@@ -1,21 +1,13 @@
-# CHECKPOINT — Ai-skills
+# Retomar o Ai-skills
 
-Data: 2026-11-09
-Branch: main (consultar git log para o SHA mais recente)
-Objetivo: biblioteca universal pesquisável, segurança e custo adicional R$0.
+A revisão de 25/11/2026 está documentada no [status técnico](docs/STATUS.md). Para retomar em outra data, confirme a revisão do checkout e o resultado de validação desse commit.
 
-Estado confirmado:
-- 11 catálogos JSON, 132 entradas totais (124 GitHub metadata, 8 unverified).
-- Índice de estrelas: INDEX.md
-- 13 Skills autorais/reconstruídas
-- 4 fichas tools: Agent Desktop, ECC, Strix, Prompt Motion
-- docs/STATUS.md, docs/UNRESOLVED.md e docs/ADOPTION_POLICY.md
-- AGENTS.md, scripts/validate_catalog.py, .github/workflows/catalog-validation.yml
+| Precisar de | Consultar |
+|---|---|
+| Escolher um fluxo próprio | [Skills por tarefa](skills/README.md) |
+| Encontrar ferramentas e seus metadados | [Índice de projetos](INDEX.md) |
+| Reproduzir uma verificação | [Comandos e cobertura](docs/STATUS.md#reproduzir-os-testes) |
+| Resolver um nome antigo | [Histórico de identidades](docs/UNRESOLVED.md) |
+| Avaliar uma adoção externa | [Política do projeto](docs/ADOPTION_POLICY.md) |
 
-Não afirmar: repositórios externos instalados, todas as licenças revisadas, scripts executados, economia comprovada, 31 fontes auditadas integralmente.
-
-Próxima execução:
-1. Ler este checkpoint + git status e validar scripts/validate_catalog.py (CI/local).
-2. Corrigir eventuais erros de validação; sincronizar INDEX.md com o JSON.
-3. Auditar somente integrações selecionadas de alto valor e pedir aprovação antes de instalação.
-4. Resolver fontes ambíguas e registrar resultados; custo adicional zero e sem fallback pago.
+O levantamento de 09/11/2026 registrava 13 skills e 124 repositórios confirmados. As contagens atuais ficam no [README](README.md). Ao continuar uma tarefa, confira também as decisões e a versão das entradas fora do Git que possam alterar o resultado.
