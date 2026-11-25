@@ -1,8 +1,36 @@
 # Índice de recursos para agentes de IA
 
-> **Foto do GitHub em 9 de novembro de 2026**. Estrelas, licença SPDX e atividade são metadados da API; **não** significam auditoria de segurança, licença aprovada, compatibilidade ou instalação. Nenhum código externo foi copiado ou executado.
+> **Snapshots do GitHub de 9 e 25 de novembro de 2026**. Estrelas, licença SPDX e atividade são metadados da API; **não** significam auditoria de segurança, licença aprovada, compatibilidade ou instalação. Nenhum código externo foi copiado ou executado.
 
-**124 repositórios com metadados confirmados**, 8 referências pendentes de confirmação e **11 catálogos JSON**. Veja também [42 referências antigas](docs/HISTORICAL_RESOURCES.md), [pendências](docs/UNRESOLVED.md) e [política de adoção](docs/ADOPTION_POLICY.md).
+**137 repositórios com metadados confirmados**, 8 referências pendentes de confirmação e **12 catálogos JSON**. Veja também [42 referências antigas](docs/HISTORICAL_RESOURCES.md), [pendências](docs/UNRESOLVED.md) e [política de adoção](docs/ADOPTION_POLICY.md).
+
+## Produtividade de desenvolvimento
+
+Seleção de 25/11/2026 para diminuir o trabalho repetitivo na busca, revisão, validação e preparação de contexto. Critérios: utilidade frequente, sobreposição com ferramentas já catalogadas, manutenção visível e possibilidade de uso sem contratar um plano adicional. [Metadados JSON](catalog/developer-productivity.json).
+
+| Uso | Projeto | Aplicação prática |
+|---|---|---|
+| Busca | [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep) | Buscar texto e arquivos no código respeitando regras de exclusão do Git. |
+| Busca | [ast-grep/ast-grep](https://github.com/ast-grep/ast-grep) | Encontrar padrões pela estrutura sintática, como chamadas a uma função em TypeScript. |
+| Revisão | [Wilfred/difftastic](https://github.com/Wilfred/difftastic) | Comparar código pela sintaxe e facilitar revisão de arquivos reformatados. |
+| Revisão | [cli/cli](https://github.com/cli/cli) | Consultar PRs, checks e execuções do GitHub Actions pelo terminal. |
+| Revisão | [reviewdog/reviewdog](https://github.com/reviewdog/reviewdog) | Levar diagnósticos dos linters ao diff do PR. Conferir permissões antes de publicar comentários. |
+| CI | [rhysd/actionlint](https://github.com/rhysd/actionlint) | Detectar erros em workflows do GitHub Actions antes do push. |
+| CI | [zizmorcore/zizmor](https://github.com/zizmorcore/zizmor) | Revisar defensivamente permissões e práticas de segurança em workflows do GitHub Actions. |
+| CI | [astral-sh/ruff](https://github.com/astral-sh/ruff) | Rodar lint e formatar Python com uma ferramenta, inclusive no CI. |
+| Automação | [casey/just](https://github.com/casey/just) | Registrar comandos recorrentes de build, lint e testes em um justfile. |
+| Automação | [go-task/task](https://github.com/go-task/task) | Definir tarefas e dependências em um Taskfile YAML multiplataforma. |
+| Automação | [jqlang/jq](https://github.com/jqlang/jq) | Extrair campos de respostas JSON para reduzir a leitura de logs e saídas de API. |
+| Contexto | [yamadashy/repomix](https://github.com/yamadashy/repomix) | Empacotar arquivos selecionados em um artefato de contexto. Revisar o conteúdo antes de compartilhar. |
+| Contexto | [mksglu/context-mode](https://github.com/mksglu/context-mode) | Indexar saídas extensas e recuperar trechos sob demanda. Conferir retenção e acesso antes de habilitar. |
+
+### Combinações por tarefa
+
+- **Nexus Finance e ERP:** use ripgrep para localizar rotas e símbolos, ast-grep quando precisar procurar uma estrutura TypeScript, e GitHub CLI para consultar os checks do PR. Use actionlint quando o diff mexer em workflows.
+- **JARVIS:** use Ruff para diagnosticar problemas de Python e escolha Just ou Task se o projeto precisar padronizar comandos. Preserve os comandos de teste já definidos e confira o shell usado no Windows.
+- **Sessões longas com IA:** comece por filtros de arquivos e campos. Use Repomix quando precisar montar um pacote de arquivos selecionados e Context Mode quando o problema for saída longa do terminal ou das ferramentas. Compare com [RTK](https://github.com/rtk-ai/rtk) para compactação da saída de comandos e use a [skill de eficiência](skills/token-efficiency/SKILL.md) para medir o efeito com a mesma tarefa.
+
+O catálogo registra a licença detectada pelo GitHub. `NOASSERTION` indica que a API não determinou um identificador SPDX. A avaliação foi documental, sem benchmark de desempenho ou instalação.
 
 ## ★ Principais projetos por popularidade
 
