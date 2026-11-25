@@ -28,6 +28,8 @@ Uma biblioteca organizada de **Skills, ferramentas, agentes, servidores MCP, fra
 
 Arquitetura de backend; Flutter; UX/UI; engenharia de agentes; educação financeira; design de aprendizagem; gamificação ética; estratégia de produto; eficiência de tokens; fluxo econômico de tarefas; banners panorâmicos para datashow; curadoria de repositórios; adoção segura de ferramentas.
 
+A coleção também inclui [revisão de PRs no GitHub](skills/github-pr-review/SKILL.md), [release Android e PWA](skills/android-pwa-release/SKILL.md) e [revisão de migrações Supabase](skills/supabase-migration-review/SKILL.md).
+
 Todas ficam em `skills/<nome>/SKILL.md`. Não há garantia de que um agente as carregará automaticamente: é necessário apontar o agente para esse repositório ou copiar a Skill após avaliação.
 
 ## Princípios

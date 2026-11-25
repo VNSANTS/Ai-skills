@@ -1,19 +1,19 @@
 ---
 name: learning-design
-description: Use for lessons, exercises, assessment rubrics and educational progressions
+description: Design lessons, worked examples, quizzes, feedback, and assessment rubrics. Use for step-by-step tutoring, exam preparation, automatic correction, and remediation after a learner submits answers.
 ---
 
 # Learning science and exercise design
 
-## When to use
-Use for lessons, exercises, assessment rubrics and educational progressions.
-
 ## Workflow
-- Define audience and learning objectives.
-- Scaffold concepts with worked examples and retrieval practice.
-- Build exercises of varying difficulty, unambiguous answer keys and constructive feedback.
-- Check factual accuracy and accessibility.
-- Avoid asserting learning efficacy without evidence; distinguish engagement metrics from actual mastery.
+
+1. Identify the learner's level, source material, and observable learning objectives. Use previous answers to select gaps and adapt the difficulty.
+2. Explain one idea at a time. Pair a worked example with a similar retrieval question, then vary the context to check whether the learner can transfer the idea. When targeting narration, write in natural spoken language and explain visual cues in words.
+3. Map each question to one objective and difficulty level. For single-answer questions, verify exactly one defensible option and use distractors tied to common reasoning errors. Keep the answer key separate until the learner submits answers when the task calls for a quiz.
+4. Grade against the key, show the score and explain the reasoning for each mistake. Distinguish content gaps from ambiguous wording and exclude invalid items consistently. Use recurring mistakes to select the next exercise.
+5. Check factual accuracy, accessibility, answer-key consistency, and alignment between each question and its objective. Report demonstrated skills and gaps based on the submitted work.
+
+Example: after a learner distinguishes Kant's view from consequentialism in a definition question, ask for the same distinction in a new dilemma and explain which part of their reasoning supports the answer.
 
 ## Source and status
 - Adapted from user-provided original Markdown documents: 04_Education_Parte1.md, 04_Education_Parte2.md.

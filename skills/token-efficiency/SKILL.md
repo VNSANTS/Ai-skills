@@ -20,6 +20,10 @@ Minimize redundant context, tool calls and output while preserving evidence, tas
 9. **Respect cost caps:** select free providers where required, enforce explicit request/token budgets and prevent paid fallbacks. Stop and request authorization before spending money.
 10. **Report honestly:** distinguish completed work, inferred findings, skipped checks and blocked steps. Do not invent token savings.
 
+## Resume without rework
+
+Confirm that the checkpoint commit matches the current revision and inspect the working-tree diff. Reuse results only while the inputs they cover remain valid. If a test helper, configuration, or dependency changed, rerun the checks that rely on it even when the feature file is identical. Save failed command summaries and the next evidence-gathering step so the next session can continue without repeating failed attempts.
+
 ## Compact checkpoint template
 ```md
 # CHECKPOINT
