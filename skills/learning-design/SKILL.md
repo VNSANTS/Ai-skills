@@ -15,6 +15,10 @@ description: Design lessons, worked examples, quizzes, feedback, and assessment 
 
 Example: after a learner distinguishes Kant's view from consequentialism in a definition question, ask for the same distinction in a new dilemma and explain which part of their reasoning supports the answer.
 
+## Correção após a entrega
+
+Mantenha a ordem e a numeração originais ao comparar respostas. Se parte da lista estiver ausente, destaque os itens sem resposta e calcule a nota com o denominador informado. Explique a diferença entre o critério de um item ambíguo e o objetivo avaliado antes de propor uma nova questão.
+
 ## Source and status
 - Adapted from user-provided original Markdown documents: 04_Education_Parte1.md, 04_Education_Parte2.md.
 - This is a **reviewed derivative**, not a verbatim copy of internal/confidential source material.

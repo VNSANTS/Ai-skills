@@ -11,3 +11,9 @@ description: Review GitHub pull requests and local diffs for regressions, missin
 4. Entregue achados por gravidade e indique riscos restantes. Se nenhum problema foi encontrado, declare o escopo revisado e os checks executados. Altere, aprove ou integre o PR conforme a autorização do usuário.
 
 Exemplo de revisão: um check verde no commit anterior continua sendo evidência daquele commit. Verifique o novo head antes de concluir que a revisão está pronta.
+
+## Triagem de falhas de CI
+
+1. Abra o primeiro passo com erro e associe o log ao SHA do PR. Compare com resultados recentes da base quando disponíveis.
+2. Classifique a causa como regressão, falha da infraestrutura ou evidência insuficiente. Execute uma reprodução focalizada quando possível. Ao repetir um job, registre a tentativa e preserve o resultado anterior.
+3. Para cada bloqueio, indique a evidência que permitiria encerrá-lo. Reconfirme o SHA antes de qualquer integração autorizada.

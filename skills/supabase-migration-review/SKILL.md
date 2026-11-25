@@ -12,3 +12,14 @@ description: Review and verify Supabase Postgres migrations that change tables, 
 5. Registre migrações e ambiente verificados, evidências e pendências. Aplique em produção somente quando autorizado.
 
 Exemplo: se uma RPC move estoque, confirme que o saldo e o lançamento mudam juntos e que um usuário de outro tenant recebe a negação esperada sem efeitos colaterais.
+
+## Matriz mínima de isolamento
+
+| Perfil | Caso de teste |
+|---|---|
+| Usuário autorizado do tenant A | Executa leitura e escrita previstas em A |
+| Usuário equivalente do tenant B | Tenta a mesma operação com identificador de A e tem acesso negado |
+| Usuário do tenant A sem permissão | Tem a operação restrita negada em A |
+| Identidade sem sessão | Recebe somente o acesso público explicitamente previsto |
+
+Execute a matriz usando o caminho de autenticação do aplicativo. Use privilégios administrativos para preparar e conferir os dados de teste, mantendo os papéis reais ao executar as operações avaliadas.

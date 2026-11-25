@@ -15,6 +15,11 @@ description: Design or review backend architecture, API contracts, request autho
 
 Example: for `POST /orders`, verify that a repeated request does not duplicate an order, a caller cannot claim another tenant's identifier, and a failed stock update cannot leave an order partially recorded.
 
+## Concorrência e recuperação
+
+- Para cada invariante, identifique onde ela é garantida, como chave única, condição de atualização ou transação. Confira se a garantia continua válida com duas requisições simultâneas.
+- Se a transação local depende de serviço externo, defina qual estado fica gravado quando o serviço falha, como retomar e como reconhecer um efeito externo já confirmado.
+
 ## Source and status
 - Adapted from user-provided original Markdown documents: 01_BACKEND_CORE.md, 02_BACKEND_SECURITY.md, 03_BACKEND_OPS.md.
 - This is a **reviewed derivative**, not a verbatim copy of internal/confidential source material.

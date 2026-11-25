@@ -12,3 +12,15 @@ description: Prepare and verify Android APK and PWA releases for shared web code
 5. Registre o ambiente, o dispositivo ou emulador usado, os resultados e o artefato correspondente. Publique somente no destino autorizado.
 
 Exemplo: se a PWA retorna ao domínio de staging após OAuth, trace a origem usada no frontend, as URLs permitidas no provedor e a rota de callback antes de mudar regras que também atendem ao Android.
+
+## Matriz de aceite
+
+| Caminho | Evidência esperada |
+|---|---|
+| Instalação limpa do APK | Pacote e versão correspondem ao artefato e o app inicia |
+| Atualização do APK | Instala sobre a versão anterior e dados esperados permanecem acessíveis |
+| OAuth com app fechado ou aberto | O callback abre a tela prevista e termina com uma única sessão |
+| OAuth na PWA de staging | O navegador permanece na origem esperada |
+| Atualização da PWA | Uma sessão com cache antigo consegue carregar a nova versão |
+
+Registre cada linha como executada, bloqueada ou fora do escopo. Trate a instalação limpa e a atualização como resultados independentes.
